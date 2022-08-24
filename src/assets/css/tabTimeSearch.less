@@ -1,0 +1,459 @@
+.tabTimeSearch {
+      float: left;
+      padding: 0;
+      width: 310px;
+      height: calc(~"100vh - 90px");
+      overflow: hidden;
+
+      .searchCont {
+            .formMod {
+                  width: 309px;
+                  height: 155px;
+                  background: rgba(24, 35, 52, 0.8);
+                  overflow: hidden;
+                  border-bottom: 1px solid #3d3c3c;
+                  position: relative;
+
+                  .starTimeMod {
+                        margin: 13px 0 0;
+
+                        /deep/.el-input__inner {
+                              width: 220px;
+                        }
+                  }
+
+                  .endTimeMod {
+                        margin: 5px 0;
+                  }
+
+                  /deep/.el-form-item {
+                        height: 28px;
+                        line-height: 28px;
+                  }
+
+                  /deep/.el-form-item__label {
+                        font-size: 12px;
+                        height: 28px;
+                        line-height: 28px;
+                        font-family: PingFangSC, PingFangSC-Regular;
+                        font-weight: 400;
+                        text-align: right;
+                        color: #ffffff;
+                        letter-spacing: 1px;
+                        padding-left: 9px;
+                  }
+
+
+
+                  .selectSate {
+                        padding: 0 12px;
+                        overflow: hidden;
+
+                        .selectSateTitle {
+                              height: 28px;
+                              font-size: 12px;
+                              font-family: PingFangSC, PingFangSC-Regular;
+                              font-weight: 400;
+                              text-align: center;
+                              color: #ffffff;
+                              line-height: 28px;
+                              letter-spacing: 1px;
+                              margin: 0;
+                              width: 59px;
+                              float: left;
+                        }
+
+                        .selectSateCont {
+                              float: left;
+                              position: relative;
+                              width: 220px;
+                              line-height: 28px;
+                              margin: 0;
+                        }
+                  }
+
+                  .searchMod {
+                        width: 100%;
+                        position: absolute;
+                        bottom: 9px;
+                        left: 0;
+
+                        .searcgBtn:hover {
+                              cursor: pointer;
+                        }
+
+                        .searcgBtn {
+                              display: block;
+                              margin: 0 auto;
+                              width: 69px;
+                              height: 22px;
+                              background: rgba(83, 192, 255, 0.5);
+                              border: 1px solid #54c0ff;
+                              border-radius: 2px;
+
+                              font-size: 12px;
+                              font-family: PingFangSC, PingFangSC-Regular;
+                              font-weight: 400;
+                              text-align: right;
+                              color: #ffffff;
+                              line-height: 22px;
+                              letter-spacing: 1px;
+                              text-align: center;
+                        }
+                  }
+            }
+      }
+
+      .listMod {
+            overflow: hidden;
+
+            .listCont {
+                  width: 310px;
+                  height: calc(~"100vh - 308px");
+                  background: rgba(24, 35, 52, 0.8);
+            }
+      }
+
+      .environmentTitle {
+            width: 309px;
+            height: 32px;
+            line-height: 32px;
+            background: rgba(16, 26, 41, 0.6);
+
+            .temperatureSpan {
+                  float: left;
+                  font-size: 14px;
+                  font-family: PingFangSC, PingFangSC-Regular;
+                  font-weight: 400;
+                  text-align: right;
+                  color: #53bfff;
+                  letter-spacing: 1px;
+            }
+
+            .temImg {
+                  width: 9px;
+                  height: 16px;
+                  float: left;
+                  margin: 8px 8px 8px 17px;
+            }
+      }
+}
+
+.elTable {
+      width: 100%;
+      height: calc(~"100vh - 375px");
+      border: 1px solid #495c6d;
+      margin: 0 auto;
+      border-left: none;
+
+      /deep/.cell {
+            position: relative;
+            font-size: 14px;
+            font-family: PingFangSC, PingFangSC-Regular;
+            font-weight: 400;
+            color: #ffffff;
+            letter-spacing: 1px;
+
+            span {
+                  text-align: left;
+
+                  font-size: 12px;
+                  font-family: PingFangSC, PingFangSC-Regular;
+                  font-weight: 400;
+                  text-align: right;
+                  color: #9fb1c3;
+                  letter-spacing: 1px;
+            }
+
+            .lookImg1 {
+                  width: 24px;
+                  height: 12px;
+            }
+
+            .lookImg1:hover {
+                  cursor: pointer;
+            }
+
+            .lookImg2 {
+                  width: 24px;
+                  height: 14px;
+            }
+
+            .lookImg2:hover {
+                  cursor: pointer;
+            }
+
+            /deep/.el-checkbox__inner {
+                  background: #495c6d;
+                  border: 1px solid #334351;
+            }
+
+            /deep/.el-table__indent {
+                  display: none;
+            }
+
+            /deep/.el-table__placeholder {
+                  display: none;
+            }
+      }
+}
+
+/deep/.el-slider__runway {
+      background: linear-gradient(90deg, #64dba4, #429ff7);
+}
+
+/deep/.el-slider__marks>div {
+      color: #ffffff;
+}
+
+.ribbon {
+      width: 392px;
+      height: 21px;
+      // background: linear-gradient(
+      //       180deg,
+      //       #c14d58,
+      //       #a28443 16%,
+      //       #71bb6b 30%,
+      //       #56926f 43%,
+      //       #6171b8 57%,
+      //       #6893ff 73%,
+      //       #4fb5e2 87%,
+      //       #61c0bf 100%
+      // );
+      border: 1px solid #979797;
+      border-radius: 18px;
+      position: fixed;
+      bottom: 61px;
+      right: 26px;
+
+      .ribbonList {
+            list-style: none;
+            // width: 360px;
+            margin-left: -20px;
+            margin-top: 20px;
+            padding: 0;
+
+            li {
+                  float: left;
+                  // width: 33px;
+                  height: 17px;
+                  margin-left: 14px;
+                  font-size: 12px;
+                  font-family: PingFangSC, PingFangSC-Regular;
+                  font-weight: 400;
+                  text-align: center;
+                  color: #ffffff;
+                  line-height: 17px;
+                  letter-spacing: 0px;
+            }
+      }
+}
+
+.seas_9Ribbon {
+      background: linear-gradient(to right,
+                  #c14d58 0%,
+                  #a28443 16%,
+                  #71bb6b 30%,
+                  #56926f 43%,
+                  #6171b8 57%,
+                  #6893ff 73%,
+                  #4fb5e2 87%,
+                  #61c0bf 100%);
+      // background: linear-gradient(
+      //       180deg,
+      //       #db0000,
+      //       #ff4900 15%,
+      //       #ff9200 25%,
+      //       #ffff00 35%,
+      //       #92ff6d 45%,
+      //       #49ffb6 55%,
+      //       #00dbff 65%,
+      //       #006dff 75%,
+      //       #0000ff 85%,
+      //       #0000b6
+      // );
+}
+
+.part2_4Ribbon {
+      background: linear-gradient(to right,
+                  #5c0084,
+                  #0000ff 15%,
+                  #00dbff 25%,
+                  #49ffb6 35%,
+                  #92ff6d 45%,
+                  #ffff00 55%,
+                  #ffff00 65%,
+                  #ff9200 75%,
+                  #ff4900 85%,
+                  #db0000);
+}
+
+.seas_1Ribbon {
+      background: linear-gradient(to right,
+                  #c14d58,
+                  #a28443 16%,
+                  #71bb6b 30%,
+                  #56926f 43%,
+                  #6171b8 57%,
+                  #6893ff 73%,
+                  #4fb5e2 87%,
+                  #61c0bf 100%);
+}
+
+.seas_6Ribbon {
+      background: linear-gradient(to right,
+                  #780001,
+                  #be0002 15%,
+                  #ff2f01 25%,
+                  #ff8e01 35%,
+                  #ffff00 45%,
+                  #5fffa0 55%,
+                  #00dfff 65%,
+                  #0060ff 75%,
+                  #4848ff 85%,
+                  #ffffff);
+}
+
+.seas_3Ribbon {
+      background: linear-gradient(to right,
+                  #5c0084,
+                  #b3003e 15%,
+                  #b21a1f 25%,
+                  #e13d28 35%,
+                  #f8963b 45%,
+                  #cfdc57 55%,
+                  #49ae5f 65%,
+                  #5398d0 75%,
+                  #a2dcf8 85%,
+                  #ffffff);
+}
+
+.part2_2Ribbon {
+      background: linear-gradient(to right,
+                  #7e0000,
+                  #df0100 15%,
+                  #ff4f00 25%,
+                  #ffef03 35%,
+                  #9fff5f 45%,
+                  #2fffce 55%,
+                  #00cfff 65%,
+                  #0060ff 75%,
+                  #0000ff 85%,
+                  #ffffff);
+}
+
+.part2_5Ribbon {
+      background: linear-gradient(to right,
+                  #db0000,
+                  #ff4900 15%,
+                  #ff9200 25%,
+                  #ffff00 35%,
+                  #92ff6d 45%,
+                  #49ffb6 55%,
+                  #00dbff 65%,
+                  #006dff 75%,
+                  #0000ff 85%,
+                  #0000b6);
+}
+
+.part2_3Ribbon {
+      background: linear-gradient(to right,
+                  #db0000,
+                  #ff4900 15%,
+                  #ff9200 25%,
+                  #ffff00 35%,
+                  #92ff6d 45%,
+                  #49ffb6 55%,
+                  #00dbff 65%,
+                  #006dff 75%,
+                  #0000ff 85%,
+                  #0000b6);
+}
+
+.monitor_7Ribbon {
+      background: linear-gradient(to right,
+                  #ff6d00,
+                  #ffff00,
+                  #b6ff49,
+                  #6dff92,
+                  #24ffdb,
+                  #00dbff,
+                  #0092ff,
+                  #0049ff,
+                  #0000ff,
+                  #ffffff);
+}
+
+/deep/.el-table td {
+      border-bottom: 1px solid #48495c;
+
+      /deep/.el-table th {
+            padding: 5px 0;
+      }
+}
+
+/deep/.el-table td,
+.el-table th {
+      padding: 5px 0;
+}
+
+
+
+/deep/.el-table th.is-leaf {
+      border-bottom: 1px solid #48495c;
+}
+
+/deep/.el-table--border td {
+      border-right: 1px solid #48495c;
+}
+
+/deep/.el-table__row {
+      background: rgba(19, 23, 35, 0.8);
+      // opacity: 0.75;
+}
+
+/deep/.el-table__body tr.current-row>td {
+      background: rgba(19, 23, 35, 0.8);
+}
+
+/deep/.el-table__empty-block {
+      height: auto;
+}
+
+/deep/.el-table__body-wrapper {
+      background: rgba(19, 23, 35, 1);
+      height: calc(~"100% - 49px");
+      overflow: auto;
+}
+
+/deep/.el-table--enable-row-hover .el-table__body tr:hover>td {
+      background-color: #1d3d5a;
+}
+
+/deep/.el-table--border::after {
+      display: none;
+}
+
+/deep/.el-table--border::before {
+      display: none;
+}
+
+/deep/.el-select__tags {
+      span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            span {
+                  display: block;
+                  margin: 0;
+            }
+      }
+}
+
+/deep/.el-tag.el-tag--info {
+      background: none;
+      border: none;
+      color: #ffffff;
+}
+

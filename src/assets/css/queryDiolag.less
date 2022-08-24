@@ -1,0 +1,932 @@
+#queryDiolag {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 999;
+
+    .showIconMargin {
+        margin-left: -24px;
+    }
+
+    .showIcon {
+        float: left;
+        height: 24px;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .showIcon:hover {
+        cursor: pointer;
+        transform: scale(1.5, 1.5);
+    }
+
+    .diolagCont {
+        float: right;
+        width: 86px;
+        height: calc(~"100vh - 90px");
+        background: #172539;
+        border-right: 2px solid #0f538d;
+        border-left: 2px solid #0f538d;
+
+        .diolagContItem {
+            width: 88px;
+            height: 101px;
+
+            overflow: hidden;
+
+            img {
+                width: 40px;
+                height: 42px;
+                margin: 20px 24px 2px;
+            }
+
+            span {
+                display: block;
+                width: 75px;
+                height: 17px;
+                font-size: 12px;
+                font-family: PingFangSC, PingFangSC-Regular;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 17px;
+                letter-spacing: 1px;
+                text-align: center;
+                padding: 0 5px;
+            }
+        }
+
+        .diolagContItem:hover {
+            cursor: pointer;
+        }
+
+        .diolagContItemChecked {
+            background: linear-gradient(270deg,
+                    rgba(156, 249, 255, 0) 1%,
+                    rgba(87, 237, 248, 0.5) 98%,
+                    // #63f0ff 98%
+                );
+        }
+    }
+
+    .elContainer {
+        float: right;
+        height: calc(~"100vh - 90px");
+        background: rgba(24, 35, 52, 0.8);
+    }
+
+    /deep/.elDropdown {
+        margin-left: 24px;
+        color: #fff;
+        // border: 1px solid #53e2ff;
+        border-radius: 4px;
+
+        .el-dropdown-link {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .linkImg {
+            margin: 6px 0 0 5px;
+            float: right;
+            width: 20px;
+            height: 20px;
+        }
+
+        .linkImg:hover {
+            cursor: pointer;
+        }
+    }
+
+    .elDropdown:hover {
+        cursor: pointer;
+    }
+
+    .queryTopTab {
+        width: 380px;
+        background: rgba(24, 35, 52, 0.8);
+        overflow: hidden;
+
+        /deep/.el-tabs {
+            overflow: hidden;
+        }
+
+        /deep/.el-tabs__header {
+            width: 222px;
+            height: 30px;
+            margin: 10px auto;
+        }
+
+        /deep/.el-tabs__item.is-active {
+            width: 111px;
+            height: 30px;
+            background: #4fc1d7;
+            border: 1px solid #53e2ff;
+            border-radius: 2px;
+        }
+
+        /deep/.el-tabs__nav-wrap::after {
+            display: none;
+        }
+
+        /deep/.el-tabs__active-bar {
+            display: none;
+        }
+
+        /deep/.el-tabs__item {
+            width: 111px;
+            height: 30px;
+            background: rgba(83, 226, 255, 0.2);
+            border: 1px solid #53e2ff;
+            border-radius: 2px;
+            height: 30px;
+            font-size: 14px;
+            font-family: PingFangSC, PingFangSC-Regular;
+            font-weight: 400;
+            text-align: right;
+            color: #ffffff;
+            line-height: 30px;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    .queryContent {
+        background: rgba(24, 35, 52, 0.8);
+        min-height: 653px;
+
+        .downBtn {
+            color: #ffffff;
+            font-size: 16px;
+            padding: 5px;
+            margin: 10px 4px;
+            border: 1px solid #6dfab8;
+            border-radius: 5px;
+            background: linear-gradient(180deg,
+                    rgba(37, 122, 90, 0.8),
+                    rgba(28, 53, 107, 0.8));
+        }
+
+        .downBtn {
+            cursor: pointer;
+        }
+    }
+
+    .conditionCont {
+        .childTab {
+            width: 98%;
+            padding-bottom: 15px;
+            background: rgba(19, 23, 35, 0.8);
+            border: 1px solid #48495c;
+            margin: 0 1%;
+            overflow: hidden;
+
+            /deep/.el-tabs__item.is-active {
+                background: none;
+                border: none;
+            }
+
+            /deep/.el-tabs__item.is-active::after {
+                content: "";
+                width: 41px;
+                height: 2px;
+                background: #56c8d6;
+                border-radius: 1px;
+                position: absolute;
+                bottom: 0;
+                left: 10px;
+            }
+
+            /deep/.el-tabs__nav-wrap::after {
+                display: none;
+            }
+
+            /deep/.el-tabs__active-bar {
+                display: none;
+            }
+
+            /deep/.el-tabs__item {
+                background: none;
+                border: none;
+                width: 111px;
+                border-radius: 2px;
+                width: 57px;
+                height: 34px;
+                font-size: 14px;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                color: #ffffff;
+                line-height: 34px;
+                position: relative;
+            }
+        }
+    }
+
+    .acquisitionTime {
+        // border: 1px solid #48495c;
+        margin: 10px 0;
+        // height: 40px;
+        line-height: 40px;
+
+        .sensor {
+            padding: 5px;
+            overflow: hidden;
+
+            img {
+                float: left;
+                margin: 12px 5px;
+            }
+
+            span {
+                float: left;
+                color: #ffffff;
+                padding-left: 10px;
+            }
+        }
+
+        .environmentTitle {
+            height: 36px;
+            line-height: 36px;
+            font-size: 16px;
+            font-family: PingFangSC, PingFangSC-Medium;
+            font-weight: 700;
+            text-align: left;
+            color: #ffffff;
+            letter-spacing: 0px;
+            position: relative;
+        }
+
+        .shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.75;
+        }
+
+        .titleShadow {
+            background: linear-gradient(180deg,
+                    rgba(37, 122, 90, 0.8),
+                    rgba(28, 53, 107, 0.8));
+        }
+
+        .temImg {
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            display: inline-block;
+            color: #ffffff;
+            z-index: 999;
+        }
+
+        .temperatureMainSpan {
+            position: absolute;
+            top: 0;
+            left: 35px;
+            display: inline-block;
+            width: 215px;
+            height: 36px;
+            z-index: 999;
+            color: #ffffff;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.tailorMap {
+    width: 145px;
+    margin-left: 8px;
+
+    /deep/.el-input__inner {
+        width: 145px;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 5px;
+    }
+}
+
+.longLat {
+    width: 122px;
+
+    /deep/.el-input__inner {
+        width: 112px;
+        height: 30px;
+        background: #222634;
+        border: 1px solid #343548;
+        margin-left: 12px;
+    }
+}
+
+.loccatBtn {
+    display: block;
+    width: 92px;
+    height: 30px;
+    background: linear-gradient(180deg, #54c0ff 0%, #64b2fd 100%);
+    border-radius: 5px;
+    border: 1px solid #54c0ff;
+    margin: 27px auto 0;
+
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 30px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.graphBtn {
+    // width: 92px;
+    margin-left: 10px;
+    padding: 0 10px;
+    height: 30px;
+    background: linear-gradient(180deg, #54c0ff 0%, #64b2fd 100%);
+    border-radius: 5px;
+    border: 1px solid #54c0ff;
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.graphBtn:hover {
+    cursor: pointer;
+}
+
+.cloudageMod {
+    width: 98%;
+    // height: 33px;
+    padding: 15px 0;
+    background: rgba(19, 23, 35, 0.8);
+    border: 1px solid #48495c;
+    margin: 0 1%;
+    overflow: hidden;
+
+    .cloudageSlider {
+        width: 105px;
+        margin-left: 20px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .cloudInput {
+        width: 35px;
+        float: left;
+        height: 24px;
+        border: 1px solid #343548;
+        overflow: hidden;
+        margin: 5px;
+
+        /deep/.el-input__inner {
+            display: block;
+            background: #272839;
+            width: 45px;
+            height: 24px;
+            line-height: 24px;
+            padding: 0;
+            text-align: center;
+        }
+    }
+}
+
+.bottomBar {
+    // background: #222634;
+    // padding: 5px 0 20px;
+    // margin-bottom: 200px;
+
+    .bottomNav {
+        width: 98%;
+
+        background: rgba(19, 23, 35, 0.8);
+        border: 1px solid #48495c;
+        padding: 5px 0;
+        margin: 10px 1% 0;
+        overflow: hidden;
+        text-align: center;
+
+        span:hover {
+            cursor: pointer;
+        }
+
+        .searchBtn {
+            float: left;
+            display: block;
+            text-align: center;
+            line-height: 30px;
+            width: 92px;
+            height: 30px;
+            background: linear-gradient(180deg, #54c0ff 0%, #64b2fd 100%);
+            border: none;
+            border-radius: 5px;
+            letter-spacing: 5px;
+            font-size: 14px;
+            font-family: PingFangSC, PingFangSC-Medium;
+            font-weight: 500;
+            text-align: center;
+            color: #ffffff;
+            outline: none;
+            margin-left: calc(50% - 101px);
+        }
+
+        .testBtn {
+            float: left;
+            display: block;
+            text-align: center;
+            line-height: 30px;
+            width: 92px;
+            height: 30px;
+            border: 1px solid #64b4fb;
+            border-radius: 5px;
+            background: transparent;
+            letter-spacing: 5px;
+            font-size: 14px;
+            font-family: PingFangSC, PingFangSC-Medium;
+            font-weight: 500;
+            text-align: center;
+            color: #ffffff;
+            outline: none;
+            margin-left: 15px;
+        }
+    }
+}
+
+.showDataMod {
+    position: fixed;
+    top: 10vh;
+    left: calc(50vw - 250px);
+    z-index: 999;
+    width: 500px;
+    // height: 447px;
+    // background: rgba(15, 26, 43, 0.8);
+    // border: 1px solid #459dae;
+    // border-radius: 5px;
+    // overflow: hidden;
+
+    /deep/.el-dialog {
+        width: 500px;
+        // height: 216px;
+        background: rgba(15, 26, 43, 0.8);
+        border-radius: 17px;
+        border: 1px solid #459dae;
+        margin: 0 auto;
+    }
+
+    /deep/.el-dialog__title {
+        color: #ffffff;
+    }
+
+    /deep/.el-dialog__body {
+        padding: 0 0 40px 0;
+    }
+
+    .modCont {
+        padding: 18px 33px 0 38px;
+        overflow: hidden;
+
+        .shoeDataTitle {
+            margin: 0 0 18px 0;
+            overflow: hidden;
+
+            .sonTitle {
+                float: left;
+                width: 40px;
+                height: 28px;
+                font-size: 14px;
+                font-family: PingFangSC, PingFangSC-Regular;
+                font-weight: 400;
+                text-align: left;
+                color: #ffffff;
+                line-height: 28px;
+                text-align: left;
+            }
+
+            .sonCont {
+                float: left;
+                padding: 0 10px;
+                height: 28px;
+                background: rgba(20, 61, 85, 0.2);
+                border: 1px solid #2f555c;
+                text-align: center;
+                font-size: 14px;
+                font-family: PingFangSC, PingFangSC-Regular;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 28px;
+                margin-right: 23px;
+            }
+
+            .sonWjTitle {
+                display: block;
+                color: #ffffff;
+                line-height: 28px;
+                font-size: 14px;
+                font-family: PingFangSC, PingFangSC-Regular;
+            }
+
+            .sonWjCont {
+                display: block;
+                // height: 28px;
+                background: rgba(20, 61, 85, 0.2);
+                border: 1px solid #2f555c;
+                text-align: center;
+                font-size: 14px;
+                font-family: PingFangSC, PingFangSC-Regular;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 28px;
+                text-align: left;
+                padding: 0 11px;
+            }
+
+        }
+
+        .shoeDataImg {
+            overflow: hidden;
+
+            .sluTitle {
+                float: left;
+                width: 42px;
+                height: 76px;
+                font-size: 14px;
+                font-family: PingFangSC, PingFangSC-Regular;
+                font-weight: 400;
+                text-align: left;
+                color: #ffffff;
+                line-height: 76px;
+                margin-right: 22px;
+            }
+
+            img {
+                float: left;
+                width: 76px;
+                height: 76px;
+                border: 1px solid #459dae;
+            }
+
+            img:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.bigImgMod {
+    /deep/.el-dialog {
+        width: 60%;
+        background: rgba(15, 26, 43, 0.8);
+        border-radius: 17px;
+        border: 1px solid #459dae;
+        margin: 0 auto;
+    }
+
+    /deep/.el-dialog__title {
+        color: #fff;
+    }
+
+    /deep/.el-dialog__body {
+        padding: 0;
+        height: 60vh;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: auto;
+            height: 60vh;
+            margin: 0 auto;
+        }
+    }
+}
+
+.submitDropdown {
+    background: linear-gradient(180deg, #6dfcb5, #64b2fd);
+    margin: 10px auto;
+    width: 100px;
+    display: block;
+    border-radius: 8px;
+}
+
+/deep/.has-gutter {
+    background: #222634;
+}
+
+.elTable {
+    margin: 5px auto;
+    width: 100%;
+    border: 1px solid #48495c;
+    background: #222634;
+    height: calc(~"100vh - 220px");
+    border-right: none;
+
+    /deep/.el-table__body-wrapper {
+        height: calc(~"100vh - 271px");
+        overflow: auto;
+    }
+}
+
+/deep/.el-form-item__label {
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: right;
+}
+
+/deep/.el-input__inner {
+    background-color: #222634;
+    // opacity: 0.77;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    width: 210px;
+}
+
+/deep/.el-range-editor .el-range-input {
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #65667c;
+}
+
+/deep/.el-range-separator {
+    color: #ffffff;
+}
+
+/deep/.el-tabs__item {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/deep/.el-date-editor .el-range-separator {
+    color: #ffffff;
+}
+
+/deep/.el-radio__label {
+    color: #ffffff;
+}
+
+/deep/.el-table th,
+.el-table tr {
+    background-color: #222634;
+}
+
+/deep/ .el-table tr {
+    background-color: #151621;
+}
+
+/deep/.cell {
+    color: #ffffff;
+
+    img {
+        width: 18px;
+        height: 12px;
+    }
+}
+
+/deep/.cell :hover {
+    cursor: pointer;
+}
+
+/deep/.el-button:hover {
+    background: none;
+    border: none;
+}
+
+/deep/.el-button:active {
+    color: #ffffff;
+}
+
+.dataNameClass {
+    margin: 0;
+    background: none;
+    color: #ffffff;
+    border: none;
+    // width: 205px;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+}
+
+/deep/.el-collapse-item__wrap {
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+/deep/.el-collapse-item__header {
+    background: rgba(0, 0, 0, 0.2);
+
+    font-size: 14px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #ffffff;
+    position: relative;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 5px;
+    padding-left: 35px;
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+
+
+.el-main {
+    background: #222634;
+}
+
+/deep/.el-collapse-item__content {
+    padding-bottom: 0;
+}
+
+/deep/.el-collapse-item__arrow {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    margin: 0;
+}
+
+/deep/.el-table td {
+    border-bottom: 1px solid #48495c;
+
+    /deep/.el-table th {
+        padding: 5px 0;
+    }
+}
+
+/deep/.el-table--border td {
+    border-right: 1px solid #48495c;
+}
+
+/deep/.el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: #1d3d5a;
+}
+
+/deep/.el-table--border th {
+    border-right: 1px solid #48495c;
+    // border-right:none;
+}
+
+/deep/.el-table th.is-leaf {
+    border-bottom: 1px solid #48495c;
+}
+
+/deep/.el-table::before {
+    display: none;
+}
+
+/deep/.el-table--border::after {
+    display: none;
+}
+
+/deep/.el-range-input {
+    background: #222634;
+}
+
+/deep/.el-input.is-disabled .el-input__inner {
+    background: #222634;
+    color: #ffffff;
+}
+
+/deep/.el-checkbox {
+    font-size: 14px;
+    color: #c1c2d0;
+    margin-right: 0;
+}
+
+/deep/.el-checkbox__label {
+    width: 40px;
+    font-size: 12px;
+}
+
+
+/deep/.el-checkbox__inner {
+    width: 15px;
+    height: 15px;
+    background: #2a384f;
+    border: 1px solid #48495c;
+    overflow: hidden;
+}
+
+
+.showNameDialog {
+    top: 65px;
+
+    /deep/.el-dialog {
+        width: 489px;
+        // height: 216px;
+        background: rgba(15, 26, 43, 0.8);
+        border-radius: 17px;
+        border: 1px solid #459dae;
+        margin: 0 auto;
+    }
+
+    /deep/.el-dialog__header {
+        width: 489px;
+        height: 40px;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.1);
+
+        span {
+            margin-left: 32px;
+            width: 71px;
+            height: 40px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #ffffff;
+            line-height: 40px;
+        }
+
+
+    }
+
+    /deep/.el-dialog__headerbtn {
+        top: 10px;
+    }
+
+    /deep/.el-dialog__body {
+        padding: 25px 24px;
+        margin: 0 0 0 7px;
+
+        overflow: hidden;
+    }
+
+    /deep/.el-input__inner {
+        width: 433px;
+        height: 39px;
+        background: rgba(20, 61, 85, 0.2);
+        border: 1px solid #5c6884;
+
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 40px;
+    }
+
+
+    /deep/.dialog-footer {
+        padding: 10px 0 0 0;
+        overflow: hidden;
+        text-align: center;
+
+        .cancelBtn {
+            background: transparent;
+            border: none;
+            color: #fff;
+        }
+
+        .cancelBtn:hover {
+            border: none;
+        }
+
+        span:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.resultList {
+    p {
+        // border: 1px solid #f4f4f4;
+        margin: 10px 0;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 8px;
+        padding: 0 10px;
+        position: relative;
+        overflow: hidden;
+
+        .looResult {
+            position: absolute;
+            right: 10px;
+            font-size: 12px;
+            color: rgb(57, 219, 36);
+        }
+
+        .looResult:hover {
+            cursor: pointer;
+        }
+
+        .resultDataName {
+            float: left;
+            width: 335px;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding-right: 10px;
+            color: #fff;
+        }
+    }
+}

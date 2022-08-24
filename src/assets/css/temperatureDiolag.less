@@ -1,0 +1,75 @@
+#temperatureDiolag {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+    height: calc(~"100vh - 90px");
+
+    .allDiolag {
+        float: left;
+        height: calc(~"100vh - 90px");
+
+        .diolagContAside {
+            float: left;
+            background: #172539;
+        }
+    }
+
+    .diolagCont {
+        width: 84px;
+        height: calc(~"100vh - 90px");
+        // border-right: 2px solid #0f538d;
+        background: #172539;
+        float: left;
+
+        .diolagContItem {
+            width: 88px;
+            height: 101px;
+
+            overflow: hidden;
+
+            img {
+                width: 40px;
+                height: 42px;
+                margin: 20px 24px 2px;
+            }
+
+            span {
+                display: block;
+                width: 75px;
+                height: 17px;
+                font-size: 12px;
+                font-family: PingFangSC, PingFangSC-Regular;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 17px;
+                letter-spacing: 1px;
+                text-align: center;
+                padding: 0 5px;
+            }
+        }
+
+        .diolagContItem:hover {
+            cursor: pointer;
+        }
+
+        .diolagContItemChecked {
+            background: linear-gradient(270deg,
+                    rgba(156, 249, 255, 0) 1%,
+                    rgba(87, 237, 248, 0.5) 98%,
+                    // #63f0ff 98%
+                );
+        }
+    }
+
+    ::-webkit-scrollbar-thumb {
+        display: none;
+        background: #0f538d;
+    }
+
+    ::-webkit-scrollbar-track {
+        display: none;
+        background: #000;
+    }
+}

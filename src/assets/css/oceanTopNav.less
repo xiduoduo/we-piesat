@@ -1,0 +1,170 @@
+#oceanTopNav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #243856;
+    opacity: 0.9;
+    // border-bottom: 2px solid #0f538d;
+
+    .topNavImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 27%;
+        height: 59px;
+
+        .navTitleImg {
+            width: 334px;
+            height: 59px;
+        }
+
+        .topNavTitle {
+            margin-left: 15px;
+            height: 58px;
+            line-height: 58px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-family: "隶书";
+            color: rgb(64, 182, 236);
+        }
+    }
+
+    .topNavImg:hover {
+        cursor: pointer;
+    }
+
+    .topNavItemBar {
+        // width: 1025px;
+        // margin: 0 auto;
+        margin-left: 27%;
+        overflow: hidden;
+
+        .itemTab {
+            float: left;
+            width: 130px;
+            height: 58px;
+            line-height: 58px;
+            margin-left: 49px;
+            text-align: center;
+
+            .topNavItem {
+                display: block;
+                width: 130px;
+                height: 58px;
+                text-decoration: none;
+
+                .topNavItemIcon1 {
+                    width: 14px;
+                    height: 14px;
+                }
+
+                .topNavItemIcon2 {
+                    width: 18px;
+                    height: 14px;
+                }
+
+                .topNavItemIcon3 {
+                    width: 16px;
+                    height: 15px;
+                }
+
+                .topNavItemIcon4 {
+                    width: 14px;
+                    height: 14px;
+                }
+
+                .topNavItemIcon5 {
+                    width: 18px;
+                    height: 13px;
+                }
+
+                .topNavItemIcon6 {
+                    width: 15px;
+                    height: 12px;
+                }
+
+                .topNavItemIcon8 {
+                    width: 17px;
+                    height: 16px;
+                    position: relative;
+                    top: 2px;
+                }
+
+                .topNavItemTitle {
+                    font-size: 14px;
+                    font-family: PingFangSC, PingFangSC-Regular;
+                    font-weight: 400;
+                    text-align: right;
+                    color: #ffffff;
+                    letter-spacing: 1px;
+                    margin-left: 9px;
+                }
+            }
+
+            /deep/.router-link-active {
+                background: linear-gradient(180deg,
+                        rgba(71, 229, 255, 0),
+                        #54ace2);
+            }
+        }
+
+        .itemTab:first-child {
+            margin-left: 0;
+        }
+    }
+
+    .switchPlatform {
+        position: absolute;
+        top: 14px;
+        right: 13px;
+        width: 99px;
+        height: 40px;
+        background: #2a6f9b;
+        border-radius: 27px;
+
+        /deep/.el-button {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+        }
+
+        .switchPlatformImg {
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .switchPlatformTag {
+            float: left;
+            margin-left: 10px;
+            width: 30px;
+            height: 20px;
+            font-size: 14px;
+            font-family: PingFangSC, PingFangSC-Regular;
+            font-weight: 400;
+            text-align: right;
+            color: #ffffff;
+            line-height: 20px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.topNavItem:hover {
+    cursor: pointer;
+}
+
+/deep/.el-button--primary {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/deep/.el-button:focus,
+.el-button:hover {
+    background-color: transparent;
+    border-color: transparent;
+}

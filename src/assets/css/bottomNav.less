@@ -1,0 +1,66 @@
+.bottomNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 988;
+
+    background: #243856;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+
+    .navItem {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 35px;
+
+        font-size: 12px;
+        font-family: PingFangSC, PingFangSC-Regular;
+        font-weight: 400;
+        text-align: right;
+        // color: #9ab8cd;
+        color: #ffffff;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .label_model {
+        float: left;
+        margin: 0 10px 0 190px;
+
+        span {
+            color: #9ab8cd;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+    }
+
+    .chartModel {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        width: 40px;
+        // width: 114px;
+        height: 30px;
+        line-height: 30px;
+        // background: rgba(29, 37, 42, 0.9);
+        border-radius: 27px;
+        text-align: center;
+        font-size: 12px;
+        font-family: PingFangSC, PingFangSC-Medium;
+        font-weight: 500;
+        color: #ffffff;
+
+        .closeChart {
+            height: 20px;
+            width: 20px;
+            margin: 5px;
+        }
+    }
+
+    .chartModel:hover {
+        cursor: pointer;
+    }
+}

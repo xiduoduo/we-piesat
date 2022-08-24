@@ -1,0 +1,75 @@
+#chartData {
+    .left {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: calc(~"100vh - 90px");
+        width: 23%;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+
+        .leftItem {
+            width: 100%;
+            flex: 1;
+            background: #243856;
+        }
+    }
+
+    .right {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        height: calc(~"100vh - 90px");
+        width: 23%;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+
+        .rightItem {
+            width: 100%;
+            flex: 1;
+            background: #243856;
+        }
+    }
+
+    .bottom {
+        position: absolute;
+        bottom: 30px;
+        right: 23%;
+        height: 30%;
+        width: 54%;
+        z-index: 2000;
+        display: flex;
+
+        .bottomItem {
+            height: 100%;
+            flex: 1;
+            background: #243856;
+        }
+    }
+
+    .closeChart {
+        position: absolute;
+        bottom: calc(~"30% + 35px");
+        right: calc(~"23% + 5px");
+        height: auto;
+        width: 1.2rem;
+        z-index: 2000;
+    }
+
+    .closeChart:hover {
+        cursor: pointer;
+    }
+
+    .chartTitle {
+        position: absolute;
+        top: 60px;
+        left: 25%;
+        z-index: 2000;
+        font-size: 18px;
+        font-weight: 550;
+        color: rgb(58, 240, 13);
+        letter-spacing: 3px;
+    }
+}

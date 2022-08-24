@@ -1,0 +1,339 @@
+.v-modal {
+    z-index: 0 !important;
+}
+
+.el-dropdown-menu {
+    width: 109px;
+    /* height: 147px; */
+    background: #151621;
+    border: 1px solid #459dae;
+}
+
+.el-dropdown-menu .el-popper {
+    width: 109px;
+    height: 147px;
+    background: #151621;
+    border: 1px solid #459dae;
+}
+
+.el-select-dropdown {
+    background: #151621;
+}
+
+.dataExplain {
+    color: #ffffff;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    background: rgba(24, 35, 52, 0.8);
+    font-size: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0f538d !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #000 !important;
+}
+
+
+.dataExplain span {
+    color: #6dfab8;
+}
+
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+    background-color: rgba(19, 23, 35, 0.8) !important;
+}
+
+.tabTimeSearch .listCont .el-table__header-wrapper th {
+    background: #131723;
+    border: 1px solid #3d3c3c;
+    border-left: none;
+}
+
+.tabTimeSearch .listCont .el-table__header-wrapper .cell {
+    font-size: 12px;
+}
+
+.tabTimeSearch .listCont .el-table__body-wrapper .cell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tabTimeSearch .listCont .el-table__body-wrapper .cell:hover {
+    cursor: pointer;
+}
+
+.el-date-editor .el-range-input {
+    width: 45%;
+}
+
+.tabTimeSearch .el-input__inner {
+    background: #222634;
+    color: #ffffff;
+    height: 35px;
+    border: none;
+}
+
+.tabTimeSearch .el-form-item__content {
+    height: 28px;
+    line-height: 28px;
+}
+
+.tabTimeSearch .el-form-item__content .el-input__inner {
+    height: 28px;
+    line-height: 28px;
+
+    font-size: 12px;
+    font-family: PingFangSC, PingFangSC-Regular;
+    font-weight: 400;
+    text-align: right;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #334351;
+    border-radius: 3px;
+}
+
+.tabTimeSearch .el-form-item__content .el-input__prefix {
+    top: -6px;
+}
+
+.tabTimeSearch .el-form-item__content .el-input__suffix {
+    top: -6px;
+}
+
+.tabTimeSearch .selectSateCont .el-cascader {
+    margin-left: 8px;
+    padding: 0;
+    width: 220px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.tabTimeSearch .selectSateCont .el-cascader .el-input__suffix {
+    height: 40px;
+    top: -5px;
+}
+
+.tabTimeSearch .selectSateCont .el-cascader:not(.is-disabled):hover .el-input__inner {
+    border: 1px solid #334351;
+}
+
+.tabTimeSearch .selectSateCont .el-cascader .el-input.is-focus .el-input__inner {
+    border: 1px solid #334351;
+}
+
+.tabTimeSearch .selectSateCont .el-cascader .el-input__inner {
+    height: 26px;
+    line-height: 26px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    font-family: PingFangSC,
+        PingFangSC-Regular;
+    font-weight: 400;
+    text-align: right;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid #334351;
+    border-radius: 3px;
+}
+
+.tabTimeSearch .selectSateCont .el-cascader.el-input__suffix {
+    height: 45px;
+    top: -5px;
+}
+
+#oceanTopNav .el-pagination {
+    display: block;
+    text-align: center;
+}
+
+#oceanTopNav .el-pagination .btn-prev {
+    background-color: rgba(16, 26, 41, 0.3);
+}
+
+#oceanTopNav .el-pagination .btn-next {
+    background-color: rgba(16, 26, 41, 0.3);
+}
+
+#oceanTopNav .el-pagination .el-icon {
+    color: rgba(83, 192, 255, 0.5);
+}
+
+#oceanTopNav .el-pagination .el-pager li {
+    background-color: rgba(16, 26, 41, 0.6);
+    color: #fff;
+}
+
+#oceanTopNav .el-pagination .el-pager li.active {
+    color: #409EFF;
+}
+
+#WorldMap .changePattern .el-switch {
+    display: inline-flex;
+}
+
+#WorldMap .changePattern .el-switch .el-switch__label {
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.territory .el-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 145px;
+    padding-left: 0;
+}
+
+.el-select .el-input__inner {
+    outline: none;
+    border: none;
+    background: rgba(29, 37, 42, 0.8);
+    color: #ffffff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+    font-size: 12px;
+}
+
+#queryDiolag .resultCont .el-table__header-wrapper .cell {
+    font-size: 12px;
+}
+
+#queryDiolag .resultCont .el-table__body-wrapper .cell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 0;
+}
+
+#queryDiolag .resultCont .el-table__body-wrapper .cell .el-checkbox {
+    display: block;
+    width: 15px;
+    margin: 0 auto;
+}
+
+#queryDiolag .resultCont .el-table__body-wrapper .cell .el-button {
+    font-size: 12px;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+#queryDiolag .el-collapse {
+    border-top: none;
+    margin: 10px 1%;
+    border-bottom: none;
+    width: 98%;
+    background: rgba(19, 23, 35, 0.8);
+    border: 1px solid #48495c;
+}
+
+#queryDiolag .el-collapse .el-form-item {
+    margin: 10px;
+}
+
+#queryDiolag .el-collapse .el-radio {
+    font-size: 16px;
+    width: 80px;
+    margin-top: 5px;
+}
+
+#queryDiolag .el-collapse .el-collapse-item {
+    position: relative;
+}
+
+#queryDiolag .el-collapse .el-collapse-item .elHidden {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 362px;
+    height: 35px;
+    background: transparent;
+    z-index: 999;
+}
+
+#queryDiolag .el-collapse .el-collapse-item .checkAllMod {
+    position: absolute;
+    top: 4px;
+    right: 16px;
+    z-index: 999;
+}
+
+#queryDiolag .el-collapse .el-checkbox__input {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+}
+
+#queryDiolag .el-collapse .el-checkbox__input.is-checked .el-checkbox__inner {
+    background: linear-gradient(180deg, #55c08f, #3f96f2);
+}
+
+#queryDiolag .queryTopTab .conditionCont .childTab .el-tabs__header {
+    height: 34px;
+    margin: 0 0 10px 0;
+}
+
+#queryDiolag .queryTopTab .conditionCont .childTab .el-tabs__header .el-tabs__nav-scroll {
+    padding-left: 12px;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff !important;
+    font-size: 12px !important;
+}
+
+/* //算法选择框 */
+.el-dropdown-menu {
+    width: 135px !important;
+    background: rgba(24, 35, 52, 0.8) !important;
+}
+
+.el-dropdown-menu__item {
+    text-align: center;
+    color: #fff !important;
+}
+
+.el-dropdown-menu__item:hover {
+    background-color: rgb(109, 180, 247) !important;
+}
+
+#slider {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    background-color: #d3d3d3;
+    width: 5px;
+    height: calc(100vh - 90px);
+    z-index: 9999;
+}
+
+#slider:hover {
+    cursor: ew-resize;
+}
+
+.captMod {
+    display: none;
+}
+
+.myPanel {
+    position: fixed;
+    top: 59px;
+    right: 0;
+    z-index: 9999;
+}
