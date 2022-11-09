@@ -1333,7 +1333,90 @@ export const setDataList = function (type) {
     }
     if (type == 'htfk') {//浒苔防控工作
         listData = [
-
+            {
+                isShow: false,
+                dataName: '0624黄海近岸藻类影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/0624黄海近岸藻类影像图.jpg",
+                },
+                infoType: 'new'
+            },
+            {
+                   isShow: false,
+                   dataName: '0624黄海藻类监测专题图',
+                   showImg: true,
+                   imgType: 1,
+                   filePath: {
+                       1: imgUrl + "/0624黄海藻类监测专题图.jpg",
+                   },
+                   infoType: 'new'
+            },
+            {
+                  isShow: false,
+                  dataName: '0624黄海藻类解译专题图',
+                  showImg: true,
+                  imgType: 1,
+                  filePath: {
+                      1: imgUrl + "/0624黄海藻类解译专题图.jpg",
+                  },
+                  infoType: 'new'
+            },
+            {
+                 isShow: false,
+                 dataName: '0624黄海藻类影像图',
+                 showImg: true,
+                 imgType: 1,
+                 filePath: {
+                     1: imgUrl + "/0624黄海藻类影像图.jpg",
+                 },
+                 infoType: 'new'
+            },
+            {
+                isShow: false,
+                dataName: '2022-06-24HY1C',
+                layerMap: { 1: 'visual_space:2022-06-24HY1C' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                },
+                infoType: 'new'
+            },
+            {
+                isShow: false,
+                dataName: '20220624HY1C_分布',
+                layerMap: { 1: 'visual_space:20220624HY1C_分布' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                },
+                infoType: 'new'
+             },
+             {
+                isShow: false,
+                dataName: '20220624HY1C_绿潮',
+                layerMap: { 1: 'visual_space:20220624HY1C_绿潮' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                },
+                infoType: 'new'
+             },
+            {
+                isShow: false,
+                dataName: '2022-06-24HY1C_NDVI',
+                layerMap: { 1: 'visual_space:2022-06-24HY1C_NDVI' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                },
+                infoType: 'new'
+             },
              {
                  isShow: false,
                  dataName: 'S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled',
@@ -1412,6 +1495,55 @@ export const setDataList = function (type) {
                     1: imgUrl + "/浒苔防控.jpg",
                 }
             },
+        ]
+    }
+    if (type == 'zcfj') {//紫菜筏架
+        listData = [
+
+             {
+                 isShow: false,
+                 dataName: 'S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled',
+                 layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled' },
+                 adr: {
+                     coordinates: [32.430, 121.423],
+                     magnificationC: 411000,
+                     magnificationL: 9
+                 },
+                 infoType: 'new'
+             },
+             {
+                  isShow: false,
+                  dataName: 'S2B_MSIL2A_20220227T023639_N0400_R089_T51SUS_20220227T051223_resampled',
+                  layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUS_20220227T051223_resampled' },
+                  adr: {
+                      coordinates: [32.430, 121.423],
+                      magnificationC: 411000,
+                      magnificationL: 9
+                  },
+                  infoType: 'new'
+             },
+             {
+                  isShow: false,
+                  dataName: '2021年第21期紫菜筏架解译矢量',
+                  layerMap: { 1: 'visual_space:2021年第21期紫菜筏架解译矢量' },
+                  adr: {
+                      coordinates: [32.430, 121.423],
+                      magnificationC: 411000,
+                      magnificationL: 9
+                  },
+                  infoType: 'new'
+             },
+             {
+                 isShow: false,
+                 dataName: '2021-2022年第21期_盐城-南通海域紫菜养殖筏架遥感解译分布图',
+                 showImg: true,
+                 imgType: 1,
+                 filePath: {
+                     1: imgUrl + "/2021-2022年第21期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
+                 },
+                 infoType: 'new'
+             },
+            //---------------------------------------------
         ]
     }
     return listData;

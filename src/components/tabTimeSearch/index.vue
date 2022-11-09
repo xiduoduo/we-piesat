@@ -224,7 +224,7 @@ export default {
                   if (that.mapData.screenShow) {
                         // 在分屏视图对应位置添加图层
                         let viewMap = that.$parent.$parent.$parent.$refs.splitScreen.mapRadioModel;
-                        let wmsLayer = addLayersL(that, row.layerMap["1"]);
+                        let wmsLayer = addLayersL(that, row.layerMap["1"],row);
 
                         let layersName = viewMap + '_' + index;
                         //有的先清除
@@ -244,13 +244,13 @@ export default {
                         //layerMap  1 底图  2 箭头  3 方向杆  4 风场流线
                         //  leaftlet加载wms  默认加载底图
 
-                        that.mapData[that.coverageName][index] = addLayersL(that, row.layerMap["1"]);
+                        that.mapData[that.coverageName][index] = addLayersL(that, row.layerMap["1"],row);
                         that.mapData.map.addLayer(that.mapData[that.coverageName][index]);
 
                         if (row.layerMap && row.layerMap["3"]) {
                               //  cesium加载wms  默认加载底图  有方向杆 默认加上
                               that.mapData.cageLayer.push(row.dataName);
-                              that.mapData[row.dataName] = addLayersL(that, row.layerMap["3"]);
+                              that.mapData[row.dataName] = addLayersL(that, row.layerMap["3"],row);
                               that.mapData.map.addLayer(that.mapData[row.dataName]);
 
                               that.$refs.showType.initType(3);
@@ -258,7 +258,7 @@ export default {
                         } else if (row.layerMap && row.layerMap["2"]) {
                               //  cesium加载wms  默认加载底图  没有有方向杆 有箭头 默认加上
                               that.mapData.cageLayer.push(row.dataName);
-                              that.mapData[row.dataName] = addLayersL(that, row.layerMap["2"]);
+                              that.mapData[row.dataName] = addLayersL(that, row.layerMap["2"],row);
                               that.mapData.map.addLayer(that.mapData[row.dataName]);
 
                               that.$refs.showType.initType(2);
@@ -278,19 +278,19 @@ export default {
                         //layerMap  1 底图  2 箭头  3 方向杆  4 风场流线
                         //  cesium加载wms  默认加载底图
 
-                        that.mapData[that.coverageName][index] = addLayersC(that, row.layerMap["1"]);
+                        that.mapData[that.coverageName][index] = addLayersC(that, row.layerMap["1"], row);
 
                         if (row.layerMap && row.layerMap["3"]) {
                               //  cesium加载wms  默认加载底图  有方向杆 默认加上
                               that.mapData.cageLayer.push(row.dataName);
-                              that.mapData[row.dataName] = addLayersC(that, row.layerMap["3"])
+                              that.mapData[row.dataName] = addLayersC(that, row.layerMap["3"], row)
 
                               that.$refs.showType.initType(3);
                               that.showedTypeLayer = true;
                         } else if (row.layerMap && row.layerMap["2"]) {
                               //  cesium加载wms  默认加载底图  没有有方向杆 有箭头 默认加上
                               that.mapData.cageLayer.push(row.dataName);
-                              that.mapData[row.dataName] = addLayersC(that, row.layerMap["2"])
+                              that.mapData[row.dataName] = addLayersC(that, row.layerMap["2"], row)
 
                               that.$refs.showType.initType(2);
                               that.showedTypeLayer = true;

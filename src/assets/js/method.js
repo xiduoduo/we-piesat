@@ -100,20 +100,20 @@ export const clearOthers = function (that, item) {
 }
 
 //加载图层
-export const addLayers = function (that, layers) {
+export const addLayers = function (that, layers, row) {
     let patternState = that.$store.getters.patternState;
     if (patternState) {
-        return addLayersC(that, layers);
+        return addLayersC(that, layers, row);
     } else {
-        return addLayersL(that, layers);
+        return addLayersL(that, layers, row);
     }
 }
 
 //leaft 加载图层
-export const addLayersL = function (that, layers) {
+export const addLayersL = function (that, layers, row) {
     return L.tileLayer.wms(geoserverUrl + workingArea, {
         layers: layers, //需要加载的图层
-        format: 'image/png', //返回的数据格式
+        format: row.infoType ? 'application/openlayers' :'image/png', //返回的数据格式
         transparent: true,
         crs: L.CRS.EPSG4326,
         // tileSize: 512,
@@ -122,13 +122,13 @@ export const addLayersL = function (that, layers) {
 }
 
 //cesium 加载图层
-export const addLayersC = function (that, layers) {
+export const addLayersC = function (that, layers, row) {
     return that.mapData.viewer.imageryLayers.addImageryProvider(new Cesium.WebMapServiceImageryProvider({
         url: geoserverUrl + workingArea,
         layers: layers,
         parameters: {
             transparent: true, // 是否透明
-            format: 'image/png', // 返回格式
+            format: row.infoType ? 'application/openlayers' :'image/png', // 返回格式
             srs: 'EPSG:4326',  // 坐标系
             // styles: ''
         }
