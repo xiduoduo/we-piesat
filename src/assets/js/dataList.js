@@ -1164,7 +1164,7 @@ export const setDataList = function (type) {
     }
     if (type == 'htlc') {//浒苔绿潮监测
         listData = [
-
+            
            {
               isShow: false,
               dataName: '2022-06-24HY1C',
@@ -1205,18 +1205,10 @@ export const setDataList = function (type) {
                   magnificationL: 7
               }
            },
-           {
-               isShow: false,
-               dataName: '0624黄海近岸藻类影像图',
-               showImg: true,
-               imgType: 1,
-               filePath: {
-                   1: imgUrl + "/0624黄海近岸藻类影像图.jpg",
-               }
-           },
+           
            {
                   isShow: false,
-                  dataName: '0624黄海藻类监测专题图',
+                  dataName: '20220624黄海藻类监测专题图',
                   showImg: true,
                   imgType: 1,
                   filePath: {
@@ -1225,7 +1217,7 @@ export const setDataList = function (type) {
            },
            {
                  isShow: false,
-                 dataName: '0624黄海藻类解译专题图',
+                 dataName: '20220624黄海藻类解译专题图',
                  showImg: true,
                  imgType: 1,
                  filePath: {
@@ -1234,18 +1226,28 @@ export const setDataList = function (type) {
            },
            {
                 isShow: false,
-                dataName: '0624黄海藻类影像图',
+                dataName: '20220624黄海近岸藻类影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/0624黄海近岸藻类影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20220624黄海藻类影像图',
                 showImg: true,
                 imgType: 1,
                 filePath: {
                     1: imgUrl + "/0624黄海藻类影像图.jpg",
                 }
-           },
+            },
+           
 
             //-----------------------------------
              {
                 isShow: false,
-                dataName: 'GF40619影像',
+                dataName: 'GF420210619影像',
                 layerMap: { 1: 'visual_space:GF4_PMI_E119.8_N35.3_20210619_L1A0000391156_Orth_1' },
                 adr: {
                     coordinates: [36.70, 119.99],
@@ -1255,7 +1257,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: 'GF40619NDVI影像',
+                dataName: 'GF420210619NDVI影像',
                 layerMap: { 1: 'visual_space:GF4_PMI_E119.8_N35.3_20210619_L1A0000391156_Orth_1.tif_NDVI' },
                 adr: {
                     coordinates: [36.70, 119.99],
@@ -1263,6 +1265,7 @@ export const setDataList = function (type) {
                     magnificationL: 6
                 }
             },
+            
             {
                 isShow: false,
                 dataName: '20210619HY1D_分布',
@@ -1283,18 +1286,10 @@ export const setDataList = function (type) {
                     magnificationL: 7
                 }
             },
+            
             {
                 isShow: false,
-                dataName: '0619黄海藻类影像图',
-                showImg: true,
-                imgType: 1,
-                filePath: {
-                    1: imgUrl + "/0619黄海海域藻类卫星遥感影像图.jpg",
-                }
-            },
-            {
-                isShow: false,
-                dataName: '0619黄海藻类监测专题图',
+                dataName: '20210619黄海藻类监测专题图',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1303,7 +1298,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '0619黄海藻类解译专题图',
+                dataName: '20210619黄海藻类解译专题图',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1312,16 +1307,26 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '0619黄海近岸藻类影像图',
+                dataName: '20210619黄海藻类影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/0619黄海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20210619黄海近岸藻类影像图',
                 showImg: true,
                 imgType: 1,
                 filePath: {
                     1: imgUrl + "/0619黄海近岸海域藻类卫星遥感影像图.jpg",
                 }
             },
+            
             {
                 isShow: false,
-                dataName: '浒苔绿潮',
+                dataName: '20210619浒苔绿潮',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1333,90 +1338,90 @@ export const setDataList = function (type) {
     }
     if (type == 'htfk') {//浒苔防控工作
         listData = [
-            {
-                isShow: false,
-                dataName: '0624黄海近岸藻类影像图',
-                showImg: true,
-                imgType: 1,
-                filePath: {
-                    1: imgUrl + "/0624黄海近岸藻类影像图.jpg",
-                },
-                infoType: 'new'
-            },
-            {
-                   isShow: false,
-                   dataName: '0624黄海藻类监测专题图',
-                   showImg: true,
-                   imgType: 1,
-                   filePath: {
-                       1: imgUrl + "/0624黄海藻类监测专题图.jpg",
-                   },
-                   infoType: 'new'
-            },
-            {
-                  isShow: false,
-                  dataName: '0624黄海藻类解译专题图',
-                  showImg: true,
-                  imgType: 1,
-                  filePath: {
-                      1: imgUrl + "/0624黄海藻类解译专题图.jpg",
-                  },
-                  infoType: 'new'
-            },
-            {
-                 isShow: false,
-                 dataName: '0624黄海藻类影像图',
-                 showImg: true,
-                 imgType: 1,
-                 filePath: {
-                     1: imgUrl + "/0624黄海藻类影像图.jpg",
-                 },
-                 infoType: 'new'
-            },
-            {
-                isShow: false,
-                dataName: '2022-06-24HY1C',
-                layerMap: { 1: 'visual_space:2022-06-24HY1C' },
-                adr: {
-                    coordinates: [34.577, 122.359],
-                    magnificationC: 1223281,
-                    magnificationL: 7
-                },
-                infoType: 'new'
-            },
-            {
-                isShow: false,
-                dataName: '20220624HY1C_分布',
-                layerMap: { 1: 'visual_space:20220624HY1C_分布' },
-                adr: {
-                    coordinates: [34.577, 122.359],
-                    magnificationC: 1223281,
-                    magnificationL: 7
-                },
-                infoType: 'new'
-             },
-             {
-                isShow: false,
-                dataName: '20220624HY1C_绿潮',
-                layerMap: { 1: 'visual_space:20220624HY1C_绿潮' },
-                adr: {
-                    coordinates: [34.577, 122.359],
-                    magnificationC: 1223281,
-                    magnificationL: 7
-                },
-                infoType: 'new'
-             },
-            {
-                isShow: false,
-                dataName: '2022-06-24HY1C_NDVI',
-                layerMap: { 1: 'visual_space:2022-06-24HY1C_NDVI' },
-                adr: {
-                    coordinates: [34.577, 122.359],
-                    magnificationC: 1223281,
-                    magnificationL: 7
-                },
-                infoType: 'new'
-             },
+            // {
+            //     isShow: false,
+            //     dataName: '0624黄海近岸藻类影像图',
+            //     showImg: true,
+            //     imgType: 1,
+            //     filePath: {
+            //         1: imgUrl + "/0624黄海近岸藻类影像图.jpg",
+            //     },
+            //     infoType: 'new'
+            // },
+            // {
+            //        isShow: false,
+            //        dataName: '0624黄海藻类监测专题图',
+            //        showImg: true,
+            //        imgType: 1,
+            //        filePath: {
+            //            1: imgUrl + "/0624黄海藻类监测专题图.jpg",
+            //        },
+            //        infoType: 'new'
+            // },
+            // {
+            //       isShow: false,
+            //       dataName: '0624黄海藻类解译专题图',
+            //       showImg: true,
+            //       imgType: 1,
+            //       filePath: {
+            //           1: imgUrl + "/0624黄海藻类解译专题图.jpg",
+            //       },
+            //       infoType: 'new'
+            // },
+            // {
+            //      isShow: false,
+            //      dataName: '0624黄海藻类影像图',
+            //      showImg: true,
+            //      imgType: 1,
+            //      filePath: {
+            //          1: imgUrl + "/0624黄海藻类影像图.jpg",
+            //      },
+            //      infoType: 'new'
+            // },
+            // {
+            //     isShow: false,
+            //     dataName: '2022-06-24HY1C',
+            //     layerMap: { 1: 'visual_space:2022-06-24HY1C' },
+            //     adr: {
+            //         coordinates: [34.577, 122.359],
+            //         magnificationC: 1223281,
+            //         magnificationL: 7
+            //     },
+            //     infoType: 'new'
+            // },
+            // {
+            //     isShow: false,
+            //     dataName: '20220624HY1C_分布',
+            //     layerMap: { 1: 'visual_space:20220624HY1C_分布' },
+            //     adr: {
+            //         coordinates: [34.577, 122.359],
+            //         magnificationC: 1223281,
+            //         magnificationL: 7
+            //     },
+            //     infoType: 'new'
+            //  },
+            //  {
+            //     isShow: false,
+            //     dataName: '20220624HY1C_绿潮',
+            //     layerMap: { 1: 'visual_space:20220624HY1C_绿潮' },
+            //     adr: {
+            //         coordinates: [34.577, 122.359],
+            //         magnificationC: 1223281,
+            //         magnificationL: 7
+            //     },
+            //     infoType: 'new'
+            //  },
+            // {
+            //     isShow: false,
+            //     dataName: '2022-06-24HY1C_NDVI',
+            //     layerMap: { 1: 'visual_space:2022-06-24HY1C_NDVI' },
+            //     adr: {
+            //         coordinates: [34.577, 122.359],
+            //         magnificationC: 1223281,
+            //         magnificationL: 7
+            //     },
+            //     infoType: 'new'
+            //  },
              {
                  isShow: false,
                  dataName: 'S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled',

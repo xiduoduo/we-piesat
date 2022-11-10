@@ -31,7 +31,7 @@ export const dialogData = {
     temperatureDiolag: {
         title: '海洋生态监测',
         children: [
-            { title: '紫菜筏架监测', disabled: false, id: 'zcfj', name: 'zcfj', switch: false, },
+            // { title: '紫菜筏架监测', disabled: false, id: 'zcfj', name: 'zcfj', switch: false, },
             { title: '浒苔绿潮监测', disabled: false, id: 'htlc', name: 'htlc', switch: false, },
             { title: '浒苔防控工作', disabled: false, id: 'htfk', name: 'htfk', switch: false, },
             { title: '海岛植被变化', disabled: false, id: 's3', name: 's3', switch: false, },

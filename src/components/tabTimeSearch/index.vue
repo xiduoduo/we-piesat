@@ -184,6 +184,7 @@ export default {
             },
             //查看图层
             openParticulars(row, index) {
+                  console.log(22,row,index)
                   let that = this;
                   that.$set(that.listData[index], "isShow", true);
                   // that.itemKey = Math.random();
