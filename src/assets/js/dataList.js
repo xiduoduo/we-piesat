@@ -1474,6 +1474,64 @@ export const setDataList = function (type) {
                     1: imgUrl + "/浒苔防控.jpg",
                 }
             },
+            {
+                isShow: false,
+                dataName: '20230315影像_Sentinel2',
+                layerMap: { 1: 'visual_space:20230315影像_Sentinel2' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                },
+            },
+            {
+                isShow: false,
+                dataName: '20230315筏架分布_第13期',
+                layerMap: { 1: 'visual_space:20230315筏架分布_第13期' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                },
+           },
+           {
+                isShow: false,
+                dataName: '20230315筏架分布_减少_第13期',
+                layerMap: { 1: 'visual_space:20230315筏架分布_减少_第13期' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                },
+            },
+            {
+                isShow: false,
+                dataName: '20230315筏架分布_增加_第13期',
+                layerMap: { 1: 'visual_space:20230315筏架分布_增加_第13期' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                },
+            },
+            {
+                isShow: false,
+                dataName: '20230315分布图_第13期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230315分布图_第13期.jpg",
+                },
+            },
+            {
+                isShow: false,
+                dataName: '20230315监测报告_第13期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230315监测报告_第13期.pdf",
+                },
+            },
         ]
     }
     if (type == 'zcfj') {//紫菜筏架
