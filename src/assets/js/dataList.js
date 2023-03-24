@@ -1245,7 +1245,7 @@ export const setDataList = function (type) {
             //-----------------------------------
              {
                 isShow: false,
-                dataName: 'GF420210619影像',
+                dataName: '20210619影像_GF4',
                 layerMap: { 1: 'visual_space:GF4_PMI_E119.8_N35.3_20210619_L1A0000391156_Orth_1' },
                 adr: {
                     coordinates: [36.70, 119.99],
@@ -1255,7 +1255,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: 'GF420210619NDVI影像',
+                dataName: '20210619NDVI影像_GF4',
                 layerMap: { 1: 'visual_space:GF4_PMI_E119.8_N35.3_20210619_L1A0000391156_Orth_1.tif_NDVI' },
                 adr: {
                     coordinates: [36.70, 119.99],
@@ -1266,7 +1266,7 @@ export const setDataList = function (type) {
             
             {
                 isShow: false,
-                dataName: '20210619HY1D_分布',
+                dataName: '20210619分布范围',
                 layerMap: { 1: 'visual_space:20210619HY1D_分布' },
                 adr: {
                     coordinates: [35.52, 121.29],
@@ -1276,7 +1276,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20210619HY1D_绿潮',
+                dataName: '20210619覆盖范围',
                 layerMap: { 1: 'visual_space:20210619HY1D_绿潮' },
                 adr: {
                     coordinates: [35.52, 121.29],
@@ -1287,7 +1287,7 @@ export const setDataList = function (type) {
             
             {
                 isShow: false,
-                dataName: '20210619黄海藻类监测专题图',
+                dataName: '20210619专题图_监测图',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1296,7 +1296,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20210619黄海藻类解译专题图',
+                dataName: '20210619专题图_解译图',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1305,7 +1305,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20210619黄海藻类影像图',
+                dataName: '20210619专题图_黄海影像',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1314,7 +1314,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20210619黄海近岸藻类影像图',
+                dataName: '20210619专题图_近岸影像',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1324,7 +1324,7 @@ export const setDataList = function (type) {
             
             {
                 isShow: false,
-                dataName: '20210619浒苔绿潮',
+                dataName: '20210619藻类监测通报',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1339,7 +1339,7 @@ export const setDataList = function (type) {
             
               {
                   isShow: false,
-                  dataName: '20230304影像_Sentinel2',
+                  dataName: '20230304影像',
                   layerMap: { 1: 'visual_space:S2_MSIL1C_20230304T023609_mos1' },
                   adr: {
                       coordinates: [34.577, 122.359],
@@ -1377,15 +1377,15 @@ export const setDataList = function (type) {
                       magnificationL: 9
                   }
               },
-              {
-                  isShow: false,
-                  dataName: '2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）',
-                  showImg: true,
-                  imgType: 1,
-                  filePath: {
-                      1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）.jpg",
-                  }
-              },
+            //   {
+            //       isShow: false,
+            //       dataName: '2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）',
+            //       showImg: true,
+            //       imgType: 1,
+            //       filePath: {
+            //           1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）.jpg",
+            //       }
+            //   },
               {
                   isShow: false,
                   dataName: '20230304分布图_第12期',
@@ -1398,7 +1398,7 @@ export const setDataList = function (type) {
             
              {
                  isShow: false,
-                 dataName: '20220227影像1_Sentinel2',
+                 dataName: '20220227影像1',
                  layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled' },
                  adr: {
                      coordinates: [32.430, 121.423],
@@ -1408,7 +1408,7 @@ export const setDataList = function (type) {
              },
              {
                   isShow: false,
-                  dataName: '20220227影像2_Sentinel2',
+                  dataName: '20220227影像2',
                   layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUS_20220227T051223_resampled' },
                   adr: {
                       coordinates: [32.430, 121.423],
@@ -1438,7 +1438,7 @@ export const setDataList = function (type) {
             //---------------------------------------------
             {
                 isShow: false,
-                dataName: '20201219影像_Sentinel2',
+                dataName: '20201219影像',
                 layerMap: { 1: 'visual_space:S2A_MSIL2A_20201219T024121' },
                 adr: {
                     coordinates: [32.70, 121.36],
@@ -1481,7 +1481,7 @@ export const setDataList = function (type) {
 
              {
                  isShow: false,
-                 dataName: '20220227影像1_Sentinel2',
+                 dataName: '20220227影像1',
                  layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled' },
                  adr: {
                      coordinates: [32.430, 121.423],
@@ -1492,7 +1492,7 @@ export const setDataList = function (type) {
              },
              {
                   isShow: false,
-                  dataName: '20220227影像2_Sentinel2',
+                  dataName: '20220227影像2',
                   layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUS_20220227T051223_resampled' },
                   adr: {
                       coordinates: [32.430, 121.423],
