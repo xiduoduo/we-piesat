@@ -1357,7 +1357,7 @@ export const setDataList = function (type) {
         // 0323
             {
                 isShow: false,
-                dataName: '2022-06-24HY1C',
+                dataName: '20220624影像_HY1C',
                 layerMap: { 1: 'visual_space:2022-06-24HY1C' },
                 adr: {
                     coordinates: [34.577, 122.359],
@@ -1367,7 +1367,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '2022-06-24HY1C_NDVI',
+                dataName: '20220624NDVI影像_HY1C',
                 layerMap: { 1: 'visual_space:2022-06-24HY1C_NDVI' },
                 adr: {
                     coordinates: [34.577, 122.359],
@@ -1377,7 +1377,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20220624HY1C_分布',
+                dataName: '20220624分布范围',
                 layerMap: { 1: 'visual_space:20220624HY1C_分布' },
                 adr: {
                     coordinates: [34.577, 122.359],
@@ -1387,7 +1387,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20220624HY1C_绿潮',
+                dataName: '20220624覆盖范围',
                 layerMap: { 1: 'visual_space:20220624HY1C_绿潮' },
                 adr: {
                     coordinates: [34.577, 122.359],
@@ -1397,7 +1397,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20220624黄海近岸藻类影像图',
+                dataName: '20220624专题图_近岸影像',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1406,7 +1406,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20220624黄海藻类监测专题图',
+                dataName: '20220624专题图_监测图',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1415,7 +1415,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20220624黄海藻类解译专题图',
+                dataName: '20220624专题图_解译图',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1424,7 +1424,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20220624黄海藻类影像图',
+                dataName: '20220624专题图_黄海影像',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1588,7 +1588,7 @@ export const setDataList = function (type) {
             //   },
               {
                   isShow: false,
-                  dataName: 'S2_MSIL1C_20230304T023609_mos1',
+                  dataName: '20230304影像_Sentinel2',
                   layerMap: { 1: 'visual_space:S2_MSIL1C_20230304T023609_mos1' },
                   adr: {
                       coordinates: [34.577, 122.359],
@@ -1598,7 +1598,7 @@ export const setDataList = function (type) {
               },
               {
                   isShow: false,
-                  dataName: '2022-2023年第12期紫菜筏架解译矢量_20230304',
+                  dataName: '20230304筏架分布_第12期',
                   layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量_20230304' },
                   adr: {
                       coordinates: [32.430, 121.423],
@@ -1608,7 +1608,7 @@ export const setDataList = function (type) {
              },
              {
                   isShow: false,
-                  dataName: '2022-2023年第12期紫菜筏架解译矢量（减少）_20230304',
+                  dataName: '20230304筏架分布_减少_第12期',
                   layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（减少）_20230304' },
                   adr: {
                       coordinates: [32.430, 121.423],
@@ -1618,7 +1618,7 @@ export const setDataList = function (type) {
               },
               {
                   isShow: false,
-                  dataName: '2022-2023年第12期紫菜筏架解译矢量（增加）_20230304',
+                  dataName: '20230304筏架分布_增加_第12期',
                   layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（增加）_20230304' },
                   adr: {
                       coordinates: [32.430, 121.423],
@@ -1637,7 +1637,7 @@ export const setDataList = function (type) {
               },
               {
                   isShow: false,
-                  dataName: '2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图',
+                  dataName: '20230304分布图_第12期',
                   showImg: true,
                   imgType: 1,
                   filePath: {
