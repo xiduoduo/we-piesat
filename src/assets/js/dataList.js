@@ -1336,6 +1336,64 @@ export const setDataList = function (type) {
     }
     if (type == 'htfk') {//浒苔防控工作
         listData = [
+            {
+                isShow: false,
+                dataName: '20230315影像',
+                layerMap: { 1: 'visual_space:20230315影像_Sentinel2' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                },
+            },
+            {
+                isShow: false,
+                dataName: '20230315筏架分布_第13期',
+                layerMap: { 1: 'visual_space:20230315筏架分布_第13期' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                },
+           },
+           {
+                isShow: false,
+                dataName: '20230315筏架分布_减少_第13期',
+                layerMap: { 1: 'visual_space:20230315筏架分布_减少_第13期' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                },
+            },
+            {
+                isShow: false,
+                dataName: '20230315筏架分布_增加_第13期',
+                layerMap: { 1: 'visual_space:20230315筏架分布_增加_第13期' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                },
+            },
+            {
+                isShow: false,
+                dataName: '20230315分布图_第13期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230315分布图_第13期.jpg",
+                },
+            },
+            {
+                isShow: false,
+                dataName: '20230315监测报告_第13期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230315监测报告_第13期.pdf",
+                },
+            },
             
               {
                   isShow: false,
@@ -1395,7 +1453,25 @@ export const setDataList = function (type) {
                       1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
                   }
               },
-            
+              {
+                isShow: false,
+                dataName: '20220302筏架分布_第21期',
+                layerMap: { 1: 'visual_space:2021年第21期紫菜筏架解译矢量' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+               isShow: false,
+               dataName: '20220302分布图_第21期',
+               showImg: true,
+               imgType: 1,
+               filePath: {
+                   1: imgUrl + "/2021-2022年第21期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
+               }
+           },
              {
                  isShow: false,
                  dataName: '20220227影像1',
@@ -1416,36 +1492,9 @@ export const setDataList = function (type) {
                       magnificationL: 9
                   }
              },
-             {
-                  isShow: false,
-                  dataName: '20220302筏架分布_第21期',
-                  layerMap: { 1: 'visual_space:2021年第21期紫菜筏架解译矢量' },
-                  adr: {
-                      coordinates: [32.430, 121.423],
-                      magnificationC: 411000,
-                      magnificationL: 9
-                  }
-             },
-             {
-                 isShow: false,
-                 dataName: '20220302分布图_第21期',
-                 showImg: true,
-                 imgType: 1,
-                 filePath: {
-                     1: imgUrl + "/2021-2022年第21期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
-                 }
-             },
+             
             //---------------------------------------------
-            {
-                isShow: false,
-                dataName: '20201219影像',
-                layerMap: { 1: 'visual_space:S2A_MSIL2A_20201219T024121' },
-                adr: {
-                    coordinates: [32.70, 121.36],
-                    magnificationC: 1223281,
-                    magnificationL: 7
-                }
-            },
+            
             {
                 isShow: false,
                 dataName: '20201222筏架分布_第10期',
@@ -1476,67 +1525,40 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '20230315影像_Sentinel2',
-                layerMap: { 1: 'visual_space:20230315影像_Sentinel2' },
+                dataName: '20201219影像',
+                layerMap: { 1: 'visual_space:S2A_MSIL2A_20201219T024121' },
                 adr: {
-                    coordinates: [32.430, 121.423],
-                    magnificationC: 411000,
-                    magnificationL: 9
-                },
+                    coordinates: [32.70, 121.36],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
             },
-            {
-                isShow: false,
-                dataName: '20230315筏架分布_第13期',
-                layerMap: { 1: 'visual_space:20230315筏架分布_第13期' },
-                adr: {
-                    coordinates: [32.430, 121.423],
-                    magnificationC: 411000,
-                    magnificationL: 9
-                },
-           },
-           {
-                isShow: false,
-                dataName: '20230315筏架分布_减少_第13期',
-                layerMap: { 1: 'visual_space:20230315筏架分布_减少_第13期' },
-                adr: {
-                    coordinates: [32.430, 121.423],
-                    magnificationC: 411000,
-                    magnificationL: 9
-                },
-            },
-            {
-                isShow: false,
-                dataName: '20230315筏架分布_增加_第13期',
-                layerMap: { 1: 'visual_space:20230315筏架分布_增加_第13期' },
-                adr: {
-                    coordinates: [32.430, 121.423],
-                    magnificationC: 411000,
-                    magnificationL: 9
-                },
-            },
-            {
-                isShow: false,
-                dataName: '20230315分布图_第13期',
-                showImg: true,
-                imgType: 1,
-                filePath: {
-                    1: imgUrl + "/20230315分布图_第13期.jpg",
-                },
-            },
-            {
-                isShow: false,
-                dataName: '20230315监测报告_第13期',
-                showImg: true,
-                imgType: 1,
-                filePath: {
-                    1: imgUrl + "/20230315监测报告_第13期.pdf",
-                },
-            },
+            
         ]
     }
     if (type == 'zcfj') {//紫菜筏架
         listData = [
-
+            {
+                isShow: false,
+                dataName: '20220302筏架分布_第21期',
+                layerMap: { 1: 'visual_space:2021年第21期紫菜筏架解译矢量' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                },
+                infoType: 'new'
+           },
+           {
+               isShow: false,
+               dataName: '20220302分布图_第21期',
+               showImg: true,
+               imgType: 1,
+               filePath: {
+                   1: imgUrl + "/2021-2022年第21期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
+               },
+               infoType: 'new'
+           },
              {
                  isShow: false,
                  dataName: '20220227影像1',
@@ -1559,27 +1581,7 @@ export const setDataList = function (type) {
                   },
                   infoType: 'new'
              },
-             {
-                  isShow: false,
-                  dataName: '20220302筏架分布_第21期',
-                  layerMap: { 1: 'visual_space:2021年第21期紫菜筏架解译矢量' },
-                  adr: {
-                      coordinates: [32.430, 121.423],
-                      magnificationC: 411000,
-                      magnificationL: 9
-                  },
-                  infoType: 'new'
-             },
-             {
-                 isShow: false,
-                 dataName: '20220302分布图_第21期',
-                 showImg: true,
-                 imgType: 1,
-                 filePath: {
-                     1: imgUrl + "/2021-2022年第21期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
-                 },
-                 infoType: 'new'
-             },
+             
             //---------------------------------------------
         ]
     }
