@@ -1730,7 +1730,7 @@ export const setDataList = function (type) {
             //  },
              {
                  isShow: false,
-                 dataName: 'S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled',
+                 dataName: '20220227影像1_Sentinel2',
                  layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled' },
                  adr: {
                      coordinates: [32.430, 121.423],
@@ -1740,7 +1740,7 @@ export const setDataList = function (type) {
              },
              {
                   isShow: false,
-                  dataName: 'S2B_MSIL2A_20220227T023639_N0400_R089_T51SUS_20220227T051223_resampled',
+                  dataName: '20220227影像2_Sentinel2',
                   layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUS_20220227T051223_resampled' },
                   adr: {
                       coordinates: [32.430, 121.423],
@@ -1750,7 +1750,7 @@ export const setDataList = function (type) {
              },
              {
                   isShow: false,
-                  dataName: '2021年第21期紫菜筏架解译矢量',
+                  dataName: '20220302筏架分布_第21期',
                   layerMap: { 1: 'visual_space:2021年第21期紫菜筏架解译矢量' },
                   adr: {
                       coordinates: [32.430, 121.423],
@@ -1760,7 +1760,7 @@ export const setDataList = function (type) {
              },
              {
                  isShow: false,
-                 dataName: '2021-2022年第21期_盐城-南通海域紫菜养殖筏架遥感解译分布图',
+                 dataName: '20220302分布图_第21期',
                  showImg: true,
                  imgType: 1,
                  filePath: {
@@ -1813,7 +1813,7 @@ export const setDataList = function (type) {
 
              {
                  isShow: false,
-                 dataName: 'S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled',
+                 dataName: '20220227影像1_Sentinel2',
                  layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUR_20220227T051223_resampled' },
                  adr: {
                      coordinates: [32.430, 121.423],
@@ -1824,7 +1824,7 @@ export const setDataList = function (type) {
              },
              {
                   isShow: false,
-                  dataName: 'S2B_MSIL2A_20220227T023639_N0400_R089_T51SUS_20220227T051223_resampled',
+                  dataName: '20220227影像2_Sentinel2',
                   layerMap: { 1: 'visual_space:S2B_MSIL2A_20220227T023639_N0400_R089_T51SUS_20220227T051223_resampled' },
                   adr: {
                       coordinates: [32.430, 121.423],
@@ -1835,7 +1835,7 @@ export const setDataList = function (type) {
              },
              {
                   isShow: false,
-                  dataName: '2021年第21期紫菜筏架解译矢量',
+                  dataName: '20220302筏架分布_第21期',
                   layerMap: { 1: 'visual_space:2021年第21期紫菜筏架解译矢量' },
                   adr: {
                       coordinates: [32.430, 121.423],
@@ -1846,7 +1846,7 @@ export const setDataList = function (type) {
              },
              {
                  isShow: false,
-                 dataName: '2021-2022年第21期_盐城-南通海域紫菜养殖筏架遥感解译分布图',
+                 dataName: '20220302分布图_第21期',
                  showImg: true,
                  imgType: 1,
                  filePath: {
