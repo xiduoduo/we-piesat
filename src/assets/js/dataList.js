@@ -1165,72 +1165,261 @@ export const setDataList = function (type) {
     if (type == 'htlc') {//浒苔绿潮监测
         listData = [
             
-           {
-              isShow: false,
-              dataName: '2022-06-24HY1C',
-              layerMap: { 1: 'visual_space:2022-06-24HY1C' },
-              adr: {
-                  coordinates: [34.577, 122.359],
-                  magnificationC: 1223281,
-                  magnificationL: 7
-              }
-          },
-           {
-              isShow: false,
-              dataName: '2022-06-24HY1C_NDVI',
-              layerMap: { 1: 'visual_space:2022-06-24HY1C_NDVI' },
-              adr: {
-                  coordinates: [34.577, 122.359],
-                  magnificationC: 1223281,
-                  magnificationL: 7
-              }
-           },
-            {
-              isShow: false,
-              dataName: '20220624HY1C_分布',
-              layerMap: { 1: 'visual_space:20220624HY1C_分布' },
-              adr: {
-                  coordinates: [34.577, 122.359],
-                  magnificationC: 1223281,
-                  magnificationL: 7
-              }
-           },
-           {
-              isShow: false,
-              dataName: '20220624HY1C_绿潮',
-              layerMap: { 1: 'visual_space:20220624HY1C_绿潮' },
-              adr: {
-                  coordinates: [34.577, 122.359],
-                  magnificationC: 1223281,
-                  magnificationL: 7
-              }
-           },
+        //    {
+        //       isShow: false,
+        //       dataName: '2022-06-24HY1C',
+        //       layerMap: { 1: 'visual_space:2022-06-24HY1C' },
+        //       adr: {
+        //           coordinates: [34.577, 122.359],
+        //           magnificationC: 1223281,
+        //           magnificationL: 7
+        //       }
+        //   },
+        //    {
+        //       isShow: false,
+        //       dataName: '2022-06-24HY1C_NDVI',
+        //       layerMap: { 1: 'visual_space:2022-06-24HY1C_NDVI' },
+        //       adr: {
+        //           coordinates: [34.577, 122.359],
+        //           magnificationC: 1223281,
+        //           magnificationL: 7
+        //       }
+        //    },
+        //     {
+        //       isShow: false,
+        //       dataName: '20220624HY1C_分布',
+        //       layerMap: { 1: 'visual_space:20220624HY1C_分布' },
+        //       adr: {
+        //           coordinates: [34.577, 122.359],
+        //           magnificationC: 1223281,
+        //           magnificationL: 7
+        //       }
+        //    },
+        //    {
+        //       isShow: false,
+        //       dataName: '20220624HY1C_绿潮',
+        //       layerMap: { 1: 'visual_space:20220624HY1C_绿潮' },
+        //       adr: {
+        //           coordinates: [34.577, 122.359],
+        //           magnificationC: 1223281,
+        //           magnificationL: 7
+        //       }
+        //    },
+
+        //    {
+        //       isShow: false,
+        //       dataName: 'S2A_MSIL2A_20230309T023531_N0509_R089_T51SUS_20230309T055352_resampled',
+        //       layerMap: { 1: 'visual_space:S2A_MSIL2A_20230309T023531_N0509_R089_T51SUS_20230309T055352_resampled' },
+        //       adr: {
+        //           coordinates: [34.577, 122.359],
+        //           magnificationC: 1223281,
+        //           magnificationL: 7
+        //       }
+        //    },
+        //    {
+        //         isShow: false,
+        //         dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51STS_20230304T045835_resampled',
+        //         layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51STS_20230304T045835_resampled' },
+        //         adr: {
+        //             coordinates: [34.577, 122.359],
+        //             magnificationC: 1223281,
+        //             magnificationL: 7
+        //         }
+        //     },
+        //     {
+        //         isShow: false,
+        //         dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51STT_20230304T045835_resampled',
+        //         layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51STT_20230304T045835_resampled' },
+        //         adr: {
+        //             coordinates: [34.577, 122.359],
+        //             magnificationC: 1223281,
+        //             magnificationL: 7
+        //         }
+        //     },
+        //     {
+        //         isShow: false,
+        //         dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51SUR_20230304T045835_resampled',
+        //         layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51SUR_20230304T045835_resampled' },
+        //         adr: {
+        //             coordinates: [34.577, 122.359],
+        //             magnificationC: 1223281,
+        //             magnificationL: 7
+        //         }
+        //     },
+        //     {
+        //         isShow: false,
+        //         dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51SUS_20230304T045835_resampled',
+        //         layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51SUS_20230304T045835_resampled' },
+        //         adr: {
+        //             coordinates: [34.577, 122.359],
+        //             magnificationC: 1223281,
+        //             magnificationL: 7
+        //         }
+        //     },
+        //     {
+        //         isShow: false,
+        //         dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51SUT_20230304T045835_resampled',
+        //         layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51SUT_20230304T045835_resampled' },
+        //         adr: {
+        //             coordinates: [34.577, 122.359],
+        //             magnificationC: 1223281,
+        //             magnificationL: 7
+        //         }
+        //     },
+        //     {
+        //         isShow: false,
+        //         dataName: '2022-2023年第12期紫菜筏架解译矢量_20230304',
+        //         layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量_20230304' },
+        //         adr: {
+        //             coordinates: [32.430, 121.423],
+        //             magnificationC: 411000,
+        //             magnificationL: 9
+        //         }
+        //    },
+        //    {
+        //         isShow: false,
+        //         dataName: '2022-2023年第12期紫菜筏架解译矢量（减少）_20230304',
+        //         layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（减少）_20230304' },
+        //         adr: {
+        //             coordinates: [32.430, 121.423],
+        //             magnificationC: 411000,
+        //             magnificationL: 9
+        //         }
+        //     },
+        //     {
+        //         isShow: false,
+        //         dataName: '2022-2023年第12期紫菜筏架解译矢量（增加）_20230304',
+        //         layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（增加）_20230304' },
+        //         adr: {
+        //             coordinates: [32.430, 121.423],
+        //             magnificationC: 411000,
+        //             magnificationL: 9
+        //         }
+        //     },
+        //     {
+        //         isShow: false,
+        //         dataName: '2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）',
+        //         showImg: true,
+        //         imgType: 1,
+        //         filePath: {
+        //             1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）.jpg",
+        //         }
+        //     },
+        //     {
+        //         isShow: false,
+        //         dataName: '2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图',
+        //         showImg: true,
+        //         imgType: 1,
+        //         filePath: {
+        //             1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
+        //         }
+        //     },
+            
+        //  
            
-           {
-                  isShow: false,
-                  dataName: '20220624黄海藻类监测专题图',
-                  showImg: true,
-                  imgType: 1,
-                  filePath: {
-                      1: imgUrl + "/0624黄海藻类监测专题图.jpg",
-                  }
-           },
-           {
-                 isShow: false,
-                 dataName: '20220624黄海藻类解译专题图',
-                 showImg: true,
-                 imgType: 1,
-                 filePath: {
-                     1: imgUrl + "/0624黄海藻类解译专题图.jpg",
-                 }
-           },
-           {
+        //    {
+        //           isShow: false,
+        //           dataName: '20220624黄海藻类监测专题图',
+        //           showImg: true,
+        //           imgType: 1,
+        //           filePath: {
+        //               1: imgUrl + "/0624黄海藻类监测专题图.jpg",
+        //           }
+        //    },
+        //    {
+        //          isShow: false,
+        //          dataName: '20220624黄海藻类解译专题图',
+        //          showImg: true,
+        //          imgType: 1,
+        //          filePath: {
+        //              1: imgUrl + "/0624黄海藻类解译专题图.jpg",
+        //          }
+        //    },
+        //    {
+        //         isShow: false,
+        //         dataName: '20220624黄海近岸藻类影像图',
+        //         showImg: true,
+        //         imgType: 1,
+        //         filePath: {
+        //             1: imgUrl + "/0624黄海近岸藻类影像图.jpg",
+        //         }
+        //     },
+        //     {
+        //         isShow: false,
+        //         dataName: '20220624黄海藻类影像图',
+        //         showImg: true,
+        //         imgType: 1,
+        //         filePath: {
+        //             1: imgUrl + "/0624黄海藻类影像图.jpg",
+        //         }
+        //     },
+           
+        // 0323
+            {
+                isShow: false,
+                dataName: '2022-06-24HY1C',
+                layerMap: { 1: 'visual_space:2022-06-24HY1C' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '2022-06-24HY1C_NDVI',
+                layerMap: { 1: 'visual_space:2022-06-24HY1C_NDVI' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20220624HY1C_分布',
+                layerMap: { 1: 'visual_space:20220624HY1C_分布' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20220624HY1C_绿潮',
+                layerMap: { 1: 'visual_space:20220624HY1C_绿潮' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
                 isShow: false,
                 dataName: '20220624黄海近岸藻类影像图',
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/0624黄海近岸藻类影像图.jpg",
+                    1: imgUrl + "/20220624黄海近岸藻类影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20220624黄海藻类监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20220624黄海藻类监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20220624黄海藻类解译专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20220624黄海藻类解译专题图.jpg",
                 }
             },
             {
@@ -1239,10 +1428,9 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/0624黄海藻类影像图.jpg",
+                    1: imgUrl + "/20220624黄海藻类影像图.jpg",
                 }
             },
-           
 
             //-----------------------------------
              {
@@ -1338,6 +1526,124 @@ export const setDataList = function (type) {
     }
     if (type == 'htfk') {//浒苔防控工作
         listData = [
+            // {
+            //     isShow: false,
+            //     dataName: 'S2A_MSIL2A_20230309T023531_N0509_R089_T51SUS_20230309T055352_resampled',
+            //     layerMap: { 1: 'visual_space:S2A_MSIL2A_20230309T023531_N0509_R089_T51SUS_20230309T055352_resampled' },
+            //     adr: {
+            //         coordinates: [34.577, 122.359],
+            //         magnificationC: 1223281,
+            //         magnificationL: 7
+            //     }
+            //  },
+            //  {
+            //       isShow: false,
+            //       dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51STS_20230304T045835_resampled',
+            //       layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51STS_20230304T045835_resampled' },
+            //       adr: {
+            //           coordinates: [34.577, 122.359],
+            //           magnificationC: 1223281,
+            //           magnificationL: 7
+            //       }
+            //   },
+            //   {
+            //       isShow: false,
+            //       dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51STT_20230304T045835_resampled',
+            //       layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51STT_20230304T045835_resampled' },
+            //       adr: {
+            //           coordinates: [34.577, 122.359],
+            //           magnificationC: 1223281,
+            //           magnificationL: 7
+            //       }
+            //   },
+            //   {
+            //       isShow: false,
+            //       dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51SUR_20230304T045835_resampled',
+            //       layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51SUR_20230304T045835_resampled' },
+            //       adr: {
+            //           coordinates: [34.577, 122.359],
+            //           magnificationC: 1223281,
+            //           magnificationL: 7
+            //       }
+            //   },
+            //   {
+            //       isShow: false,
+            //       dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51SUS_20230304T045835_resampled',
+            //       layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51SUS_20230304T045835_resampled' },
+            //       adr: {
+            //           coordinates: [34.577, 122.359],
+            //           magnificationC: 1223281,
+            //           magnificationL: 7
+            //       }
+            //   },
+            //   {
+            //       isShow: false,
+            //       dataName: 'S2B_MSIL1C_20230304T023609_N0509_R089_T51SUT_20230304T045835_resampled',
+            //       layerMap: { 1: 'visual_space:S2B_MSIL1C_20230304T023609_N0509_R089_T51SUT_20230304T045835_resampled' },
+            //       adr: {
+            //           coordinates: [34.577, 122.359],
+            //           magnificationC: 1223281,
+            //           magnificationL: 7
+            //       }
+            //   },
+              {
+                  isShow: false,
+                  dataName: 'S2_MSIL1C_20230304T023609_mos1',
+                  layerMap: { 1: 'visual_space:S2_MSIL1C_20230304T023609_mos1' },
+                  adr: {
+                      coordinates: [34.577, 122.359],
+                      magnificationC: 1223281,
+                      magnificationL: 7
+                  }
+              },
+              {
+                  isShow: false,
+                  dataName: '2022-2023年第12期紫菜筏架解译矢量_20230304',
+                  layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量_20230304' },
+                  adr: {
+                      coordinates: [32.430, 121.423],
+                      magnificationC: 411000,
+                      magnificationL: 9
+                  }
+             },
+             {
+                  isShow: false,
+                  dataName: '2022-2023年第12期紫菜筏架解译矢量（减少）_20230304',
+                  layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（减少）_20230304' },
+                  adr: {
+                      coordinates: [32.430, 121.423],
+                      magnificationC: 411000,
+                      magnificationL: 9
+                  }
+              },
+              {
+                  isShow: false,
+                  dataName: '2022-2023年第12期紫菜筏架解译矢量（增加）_20230304',
+                  layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（增加）_20230304' },
+                  adr: {
+                      coordinates: [32.430, 121.423],
+                      magnificationC: 411000,
+                      magnificationL: 9
+                  }
+              },
+              {
+                  isShow: false,
+                  dataName: '2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）',
+                  showImg: true,
+                  imgType: 1,
+                  filePath: {
+                      1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）.jpg",
+                  }
+              },
+              {
+                  isShow: false,
+                  dataName: '2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图',
+                  showImg: true,
+                  imgType: 1,
+                  filePath: {
+                      1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
+                  }
+              },
             // {
             //     isShow: false,
             //     dataName: '0624黄海近岸藻类影像图',

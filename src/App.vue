@@ -23,4 +23,7 @@ body {
             color: #ffffff;
       }
 }
+.el-table .el-table__cell.is-center:first-child {
+      text-align: left;
+}
 </style>
