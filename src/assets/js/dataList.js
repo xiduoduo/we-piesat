@@ -1438,7 +1438,7 @@ export const setDataList = function (type) {
             //---------------------------------------------
             {
                 isShow: false,
-                dataName: 'S2A20201219影像',
+                dataName: '20201219影像_Sentinel2',
                 layerMap: { 1: 'visual_space:S2A_MSIL2A_20201219T024121' },
                 adr: {
                     coordinates: [32.70, 121.36],
@@ -1448,7 +1448,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '紫菜筏架10期解译',
+                dataName: '20201222筏架分布_第10期',
                 layerMap: { 1: 'visual_space:紫菜筏架_第十期_20201222' },
                 adr: {
                     coordinates: [32.70, 121.36],
@@ -1458,7 +1458,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '工作区遥感解译图',
+                dataName: '20201222分布图_第10期',
                 showImg: true,
                 imgType: 1,
                 filePath: {
@@ -1467,7 +1467,7 @@ export const setDataList = function (type) {
             },
             {
                 isShow: false,
-                dataName: '浒苔防控',
+                dataName: '20201222监测报告_第10期',
                 showImg: true,
                 imgType: 1,
                 filePath: {
