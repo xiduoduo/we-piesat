@@ -5,7 +5,8 @@
             </div>
             <!-- 图片查看 -->
             <div class="showDialog" id="showDialog1" v-show="type== 1">
-                  <img :src="lbtSrc" class="dialogImg" />
+                  <embed v-if="lbtSrc.indexOf('.pdf') >= 0"  type="application/pdf" :src="lbtSrc" style="width:100%" class="dialogImg">
+                  <img v-else :src="lbtSrc" class="dialogImg" />
             </div>
             <div class="showDialog" id="showDialog2" v-show="type== 2">
                   <img :src="lbtSrc" class="dialogImg2" />

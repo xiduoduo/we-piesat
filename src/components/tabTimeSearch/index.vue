@@ -347,7 +347,7 @@ export default {
             closeParticulars(row, index) {
                   let that = this;
                   that.$set(that.listData[index], "isShow", false);
-                  that.itemKey = Math.random();
+                  // that.itemKey = Math.random();
 
                   that.showTypeShow = false;
                   that.showTypeView && that.mapData.viewer.imageryLayers.remove(that.showTypeView);
