@@ -1164,6 +1164,863 @@ export const setDataList = function (type) {
     }
     if (type == 'htlc') {//浒苔绿潮监测
         listData = [
+            // 0601新增
+            // 0528
+            {
+                isShow: false,
+                dataName: '20230528影像_L10000191453',
+                layerMap: { 1: 'visual_space:GF3B_MYC_FSII_007941_E120.6_N33.1_20230527_L2_VH_L10000191453_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230528影像_L10000191452',
+                layerMap: { 1: 'GF3B_MYC_FSII_007941_E120.9_N34.1_20230527_L2_VH_L10000191452_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230528影像_L10000191451',
+                layerMap: { 1: 'visual_space:GF3B_MYC_FSII_007941_E121.1_N35.1_20230527_L2_VH_L10000191451_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230528矢量_GF3B_ht',
+                layerMap: { 1: 'visual_space:20230528_GF3B_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230528矢量_GF3B_ht_agg',
+                layerMap: { 1: 'visual_space:20230528_GF3B_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230528专题图_黄海-东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230528黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230528专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230528黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230528专题图_黄海海域藻类卫星遥感监测通报第44期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230528黄海海域藻类卫星遥感监测通报第44期.pdf",
+                }
+            },
+            // 0527
+            {
+                isShow: false,
+                dataName: '20230527影像_L10000150743',
+                layerMap: { 1: 'visual_space:GF3C_MYC_FSII_005981_E120.6_N33.0_20230526_L2A_VH_L10000150743_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230527影像_L10000150742',
+                layerMap: { 1: 'visual_space:GF3C_MYC_FSII_005981_E120.9_N34.0_20230526_L2A_VH_L10000150742_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230527影像_L10000150741',
+                layerMap: { 1: 'visual_space:GF3C_MYC_FSII_005981_E121.1_N35.0_20230526_L2A_VH_L10000150741_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230527矢量_gf3_ht',
+                layerMap: { 1: 'visual_space:20230527_gf3_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230527矢量_gf3_ht_agg',
+                layerMap: { 1: 'visual_space:20230527_gf3_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230527专题图_东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230527黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230527专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230527黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230527专题图_黄海海域藻类卫星遥感监测通报第43期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230527黄海海域藻类卫星遥感监测通报第43期.pdf",
+                }
+            },
+            // 0526
+            {
+                isShow: false,
+                dataName: '20230526影像_h1c_mosaic',
+                layerMap: { 1: 'visual_space:20230526_h1c_mosaic' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230526矢量_h1c_ht',
+                layerMap: { 1: 'visual_space:20230526_h1c_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230526矢量_h1c_ht_agg',
+                layerMap: { 1: 'visual_space:20230526_h1c_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230526矢量_h1c_mwz',
+                layerMap: { 1: 'visual_space:20230526_h1c_mwz' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230526矢量_h1c_mwz_agg',
+                layerMap: { 1: 'visual_space:20230526_h1c_mwz_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230526专题图_黄海-东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230526黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230526专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230526黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230526专题图_黄海海域藻类卫星遥感监测通报第42期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230526黄海海域藻类卫星遥感监测通报第42期.pdf",
+                }
+            },
+            // 0525
+            {
+                isShow: false,
+                dataName: '20230525影像_L20000150168',
+                layerMap: { 1: 'visual_space:GF3C_MYC_FSII_005952_E120.8_N32.7_20230524_L2_VV_L20000150168_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230525影像_L20000150176',
+                layerMap: { 1: 'visual_space:GF3C_MYC_FSII_005952_E121.0_N33.6_20230524_L2_VV_L20000150176_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230525影像_L20000150177',
+                layerMap: { 1: 'visual_space:GF3C_MYC_FSII_005952_E121.2_N34.5_20230524_L2_VV_L20000150177_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230525矢量_GF3_ht',
+                layerMap: { 1: 'visual_space:20230525_GF3_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230525矢量_GF3_ht_agg',
+                layerMap: { 1: 'visual_space:20230525_GF3_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230525专题图_黄海-东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230525黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230525专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230525黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230525专题图_黄海海域藻类卫星遥感监测通报第41期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230525黄海海域藻类卫星遥感监测通报第41期.pdf",
+                }
+            },
+            // 0523
+            {
+                isShow: false,
+                dataName: '20230523影像_H1C_ht_uint8_wgs84',
+                layerMap: { 1: 'visual_space:20230523_H1C_ht_uint8_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230523矢量_HY1C_ht',
+                layerMap: { 1: 'visual_space:20230523_HY1C_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230523矢量_HY1C_ht_agg',
+                layerMap: { 1: 'visual_space:20230523_HY1C_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230523专题图_黄海-东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230523黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230523专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230523黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230523专题图_黄海海域藻类卫星遥感监测通报第39期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230523黄海海域藻类卫星遥感监测通报第39期.pdf",
+                }
+            },
+            // 0520
+            {
+                isShow: false,
+                dataName: '20230520影像_H1C_ht_unit8_wgs84',
+                layerMap: { 1: 'visual_space:20230520_H1C_ht_unit8_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230520矢量_HY1C_ht',
+                layerMap: { 1: 'visual_space:20230520HY1C_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230520矢量_HY1C_ht_agg',
+                layerMap: { 1: 'visual_space:20230520HY1C_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230520专题图_黄海-东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230520黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230520专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230520黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230520专题图_黄海海域藻类卫星遥感监测通报第36期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230520黄海海域藻类卫星遥感监测通报第36期.pdf",
+                }
+            },
+            // 0519
+            {
+                isShow: false,
+                dataName: '20230519影像_HJ2B_ht_uint8_wgs84',
+                layerMap: { 1: 'visual_space:20230519_HJ2B_ht_uint8_wgs84' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230519矢量_HJ2B_ht',
+                layerMap: { 1: 'visual_space:20230519_HJ2B_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230519矢量_HJ2B_ht_agg',
+                layerMap: { 1: 'visual_space:20230519_HJ2B_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230519专题图_黄海-东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230519黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230519专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230519黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230519专题图_黄海海域藻类卫星遥感监测通报第35期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230519黄海海域藻类卫星遥感监测通报第35期.pdf",
+                }
+            },
+            // 0515
+            {
+                isShow: false,
+                dataName: '20230515影像_HY1D_uint8',
+                layerMap: { 1: 'visual_space:20230515_HY1D_uint8' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230515矢量_HY1D_ht',
+                layerMap: { 1: 'visual_space:20230515_HY1D_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230515矢量_HY1D_ht_Agg',
+                layerMap: { 1: 'visual_space:20230515_HY1D_ht_Agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230515矢量_HY1D_mwz',
+                layerMap: { 1: 'visual_space:20230515_HY1D_mwz' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230515矢量_HY1D_mwz_Agg',
+                layerMap: { 1: 'visual_space:20230515_HY1D_mwz_Agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230515专题图_黄海-东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230515黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230515专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230515黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230515专题图_黄海海域藻类卫星遥感监测通报第31期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230515黄海海域藻类卫星遥感监测通报第31期.pdf",
+                }
+            },
+            // 0514
+            {
+                isShow: false,
+                dataName: '20230514影像_HY1C_uint8',
+                layerMap: { 1: 'visual_space:20230514_HY1C_uint8' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230514矢量_HY1C_ht',
+                layerMap: { 1: 'visual_space:20230514HY1C_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230514矢量_HY1C_ht_agg',
+                layerMap: { 1: 'visual_space:20230514HY1C_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230514矢量_HY1C_mwz',
+                layerMap: { 1: 'visual_space:20230514HY1C_mwz' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230514矢量_HY1C_mwz_agg',
+                layerMap: { 1: 'visual_space:20230514HY1C_mwz_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230514专题图_黄海-东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230514黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230514专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230514黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230514专题图_黄海海域藻类卫星遥感监测通报第30期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230514黄海海域藻类卫星遥感监测通报第30期.pdf",
+                }
+            },
+            // 0513
+            {
+                isShow: false,
+                dataName: '20230513影像_GF4_uint8',
+                layerMap: { 1: 'visual_space:20230513_GF4_uint8' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230513矢量_GF4_ht',
+                layerMap: { 1: 'visual_space:20230513GF4_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230513矢量_GF4_ht_agg',
+                layerMap: { 1: 'visual_space:20230513GF4_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230513矢量_GF4_mwz',
+                layerMap: { 1: 'visual_space:20230513GF4_mwz' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230513矢量_GF4_mwz_agg',
+                layerMap: { 1: 'visual_space:20230513GF4_mwz_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230513专题图_黄海-东海海域藻类卫星遥感监测专题图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230513黄海-东海海域藻类卫星遥感监测专题图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230513专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230513黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230513专题图_黄海海域藻类卫星遥感监测通报第29期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230513黄海海域藻类卫星遥感监测通报第29期.pdf",
+                }
+            },
+            // 0511
+            {
+                isShow: false,
+                dataName: '20230511影像_HY1C_uint8',
+                layerMap: { 1: 'visual_space:20230511HY1C_uint8' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230511矢量_ht',
+                layerMap: { 1: 'visual_space:20230511_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230511矢量_ht_agg',
+                layerMap: { 1: 'visual_space:20230511_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230511专题图_黄海-东海海域藻类卫星遥感监测专题',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230511黄海-东海海域藻类卫星遥感监测专题.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230511专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230511黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230511专题图_黄海海域藻类卫星遥感监测通报第27期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230511黄海海域藻类卫星遥感监测通报第27期.pdf",
+                }
+            },
+            // 0509
+            {
+                isShow: false,
+                dataName: '20230509影像_H1D_uint8',
+                layerMap: { 1: 'visual_space:20230509_H1D_uint8' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230509矢量_hy1d_20230509_ht',
+                layerMap: { 1: 'visual_space:hy1d_20230509_ht' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230509矢量_hy1d_20230509_ht_agg',
+                layerMap: { 1: 'visual_space:hy1d_20230509_ht_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230509矢量_hy1d_20230509_mwz',
+                layerMap: { 1: 'visual_space:hy1d_20230509_mwz' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230509矢量_hy1d_20230509_mwz_agg',
+                layerMap: { 1: 'visual_space:hy1d_20230509_mwz_agg' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230509专题图_黄海-东海海域藻类卫星遥感监测专题',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230509黄海-东海海域藻类卫星遥感监测专题.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230509专题图_黄海-东海海域藻类卫星遥感影像图',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230509黄海-东海海域藻类卫星遥感影像图.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230509专题图_黄海海域藻类卫星遥感监测通报第25期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/20230509黄海海域藻类卫星遥感监测通报第25期",
+                }
+            },
         
             {
                 isShow: false,
@@ -1331,11 +2188,69 @@ export const setDataList = function (type) {
                     1: imgUrl + "/浒苔绿潮.jpg",
                 }
             },
-
+            
        ]
     }
     if (type == 'htfk') {//浒苔防控工作
         listData = [
+            {
+                isShow: false,
+                dataName: '20230304影像',
+                layerMap: { 1: 'visual_space:S2_MSIL1C_20230304T023609_mos1' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230304筏架分布_第12期',
+                layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量_20230304' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+           {
+                isShow: false,
+                dataName: '20230304筏架分布_减少_第12期',
+                layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（减少）_20230304' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+            {
+                isShow: false,
+                dataName: '20230304筏架分布_增加_第12期',
+                layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（增加）_20230304' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+            },
+          //   {
+          //       isShow: false,
+          //       dataName: '2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）',
+          //       showImg: true,
+          //       imgType: 1,
+          //       filePath: {
+          //           1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）.jpg",
+          //       }
+          //   },
+            {
+                isShow: false,
+                dataName: '20230304分布图_第12期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
+                }
+            },
             {
                 isShow: false,
                 dataName: '20230315影像',
@@ -1395,64 +2310,7 @@ export const setDataList = function (type) {
                 },
             },
             
-              {
-                  isShow: false,
-                  dataName: '20230304影像',
-                  layerMap: { 1: 'visual_space:S2_MSIL1C_20230304T023609_mos1' },
-                  adr: {
-                      coordinates: [34.577, 122.359],
-                      magnificationC: 1223281,
-                      magnificationL: 7
-                  }
-              },
-              {
-                  isShow: false,
-                  dataName: '20230304筏架分布_第12期',
-                  layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量_20230304' },
-                  adr: {
-                      coordinates: [32.430, 121.423],
-                      magnificationC: 411000,
-                      magnificationL: 9
-                  }
-             },
-             {
-                  isShow: false,
-                  dataName: '20230304筏架分布_减少_第12期',
-                  layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（减少）_20230304' },
-                  adr: {
-                      coordinates: [32.430, 121.423],
-                      magnificationC: 411000,
-                      magnificationL: 9
-                  }
-              },
-              {
-                  isShow: false,
-                  dataName: '20230304筏架分布_增加_第12期',
-                  layerMap: { 1: 'visual_space:2022-2023年第12期紫菜筏架解译矢量（增加）_20230304' },
-                  adr: {
-                      coordinates: [32.430, 121.423],
-                      magnificationC: 411000,
-                      magnificationL: 9
-                  }
-              },
-            //   {
-            //       isShow: false,
-            //       dataName: '2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）',
-            //       showImg: true,
-            //       imgType: 1,
-            //       filePath: {
-            //           1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）.jpg",
-            //       }
-            //   },
-              {
-                  isShow: false,
-                  dataName: '20230304分布图_第12期',
-                  showImg: true,
-                  imgType: 1,
-                  filePath: {
-                      1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
-                  }
-              },
+             
               {
                 isShow: false,
                 dataName: '20220302筏架分布_第21期',
