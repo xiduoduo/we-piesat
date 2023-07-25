@@ -519,14 +519,14 @@ export const location = function (that, adr) {
 }
 export const locationC = function (adr, that) {
     that.mapData.viewer.camera.flyTo({
-        destination: Cesium.Cartesian3.fromDegrees(adr.coordinates[1], adr.coordinates[0], adr.magnificationC),//经度、纬度、高度
-        orientation: {
-            heading: Cesium.Math.toRadians(348.4202942851978),//绕垂直于地心的轴旋转
-            pitch: Cesium.Math.toRadians(-89.74026687972041),//绕纬度线旋转
-            roll: Cesium.Math.toRadians(0)//绕经度线旋转
-        },
-        complete: function callback() {
-        }
+        // destination: Cesium.Cartesian3.fromDegrees(121.423,32.43, 1223281),//经度、纬度、高度
+        // orientation: {
+        //     heading: Cesium.Math.toRadians(348.4202942851978),//绕垂直于地心的轴旋转
+        //     pitch: Cesium.Math.toRadians(-89.74026687972041),//绕纬度线旋转
+        //     roll: Cesium.Math.toRadians(0)//绕经度线旋转
+        // },
+        // complete: function callback() {
+        // }
     });
 }
 export const locationL = function (adr, that) {

@@ -1240,7 +1240,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230528黄海海域藻类卫星遥感监测通报第44期.pdf",
+                    1: imgUrl + "/20230528黄海海域藻类卫星遥感监测通报第44期.jpg",
                 }
             },
             // 0527
@@ -1318,7 +1318,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230527黄海海域藻类卫星遥感监测通报第43期.pdf",
+                    1: imgUrl + "/20230527黄海海域藻类卫星遥感监测通报第43期.jpg",
                 }
             },
             // 0526
@@ -1396,7 +1396,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230526黄海海域藻类卫星遥感监测通报第42期.pdf",
+                    1: imgUrl + "/20230526黄海海域藻类卫星遥感监测通报第42期.jpg",
                 }
             },
             // 0525
@@ -1474,7 +1474,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230525黄海海域藻类卫星遥感监测通报第41期.pdf",
+                    1: imgUrl + "/20230525黄海海域藻类卫星遥感监测通报第41期.jpg",
                 }
             },
             // 0523
@@ -1532,7 +1532,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230523黄海海域藻类卫星遥感监测通报第39期.pdf",
+                    1: imgUrl + "/20230523黄海海域藻类卫星遥感监测通报第39期.jpg",
                 }
             },
             // 0520
@@ -1590,7 +1590,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230520黄海海域藻类卫星遥感监测通报第36期.pdf",
+                    1: imgUrl + "/20230520黄海海域藻类卫星遥感监测通报第36期.jpg",
                 }
             },
             // 0519
@@ -1648,7 +1648,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230519黄海海域藻类卫星遥感监测通报第35期.pdf",
+                    1: imgUrl + "/20230519黄海海域藻类卫星遥感监测通报第35期.jpg",
                 }
             },
             // 0515
@@ -1726,7 +1726,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230515黄海海域藻类卫星遥感监测通报第31期.pdf",
+                    1: imgUrl + "/20230515黄海海域藻类卫星遥感监测通报第31期.jpg",
                 }
             },
             // 0514
@@ -1804,7 +1804,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230514黄海海域藻类卫星遥感监测通报第30期.pdf",
+                    1: imgUrl + "/20230514黄海海域藻类卫星遥感监测通报第30期.jpg",
                 }
             },
             // 0513
@@ -1882,7 +1882,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230513黄海海域藻类卫星遥感监测通报第29期.pdf",
+                    1: imgUrl + "/20230513黄海海域藻类卫星遥感监测通报第29期.jpg",
                 }
             },
             // 0511
@@ -1940,7 +1940,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230511黄海海域藻类卫星遥感监测通报第27期.pdf",
+                    1: imgUrl + "/20230511黄海海域藻类卫星遥感监测通报第27期.jpg",
                 }
             },
             // 0509
@@ -2018,7 +2018,7 @@ export const setDataList = function (type) {
                 showImg: true,
                 imgType: 1,
                 filePath: {
-                    1: imgUrl + "/20230509黄海海域藻类卫星遥感监测通报第25期",
+                    1: imgUrl + "/20230509黄海海域藻类卫星遥感监测通报第25期.jpg",
                 }
             },
         

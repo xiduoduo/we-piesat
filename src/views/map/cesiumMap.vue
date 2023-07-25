@@ -201,7 +201,7 @@ export default {
                   //       destination: Cesium.Cartesian3.fromDegrees(110.20, 34.55, 3000000)
                   // });
                   viewer.camera.flyTo({
-                        destination: Cesium.Cartesian3.fromDegrees(114.84, 26.15, 12315773),
+                        destination: this.$route.path=="/temperatureDiolag"?Cesium.Cartesian3.fromDegrees(121.423,32.43, 1223281):Cesium.Cartesian3.fromDegrees(114.84, 26.15, 12315773),
                         orientation: {
                               heading: Cesium.Math.toRadians(348.4202942851978),
                               pitch: Cesium.Math.toRadians(-89.74026687972041),
