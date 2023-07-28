@@ -296,16 +296,16 @@ export default {
 
                   //cesium
                   if (that.patternState) {
-                        that.patternState && that.mapData.viewer.camera.flyTo({
-                              destination: Cesium.Cartesian3.fromDegrees(center[0], center[1], 438723),//经度、纬度、高度
-                              orientation: {
-                                    heading: Cesium.Math.toRadians(348.4202942851978),//绕垂直于地心的轴旋转
-                                    pitch: Cesium.Math.toRadians(-89.74026687972041),//绕纬度线旋转
-                                    roll: Cesium.Math.toRadians(0)//绕经度线旋转
-                              },
-                              complete: function callback() {
-                              }
-                        });
+                        // that.patternState && that.mapData.viewer.camera.flyTo({
+                        //       destination: Cesium.Cartesian3.fromDegrees(center[0], center[1], 438723),//经度、纬度、高度
+                        //       orientation: {
+                        //             heading: Cesium.Math.toRadians(348.4202942851978),//绕垂直于地心的轴旋转
+                        //             pitch: Cesium.Math.toRadians(-89.74026687972041),//绕纬度线旋转
+                        //             roll: Cesium.Math.toRadians(0)//绕经度线旋转
+                        //       },
+                        //       complete: function callback() {
+                        //       }
+                        // });
                         //画边框
                         let polyData = [], polyDataArr = [];
                         arr3.forEach(v => {
@@ -349,7 +349,7 @@ export default {
                   }
                   // leaflet
                   else {
-                        that.mapData.map.setView([center[1], center[0]], 6);
+                        // that.mapData.map.setView([center[1], center[0]], 6);
                         //画边框
                         let polyData = []
                         arr3.forEach(v => {
@@ -999,7 +999,7 @@ export default {
                         })
 
                         that.mapData.map.addLayer(that.interLocat)
-                        that.mapData.map.setView([averageLong, averageLat], 5);
+                        // that.mapData.map.setView([averageLong, averageLat], 5);
                   }
             },
             //关闭

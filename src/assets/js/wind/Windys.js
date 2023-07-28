@@ -195,13 +195,13 @@ CanvasWindy.prototype = {
         this.canvasContext.beginPath();
         this.canvasContext.strokeStyle = this.color;
         particles.forEach(function (particle) {
-            var movetopos = self._tomap(particle.lng, particle.lat, particle);
-            var linetopos = self._tomap(particle.tlng, particle.tlat, particle);
-            // console.log(movetopos,linetopos);
-            if (movetopos != null && linetopos != null) {
-                self.canvasContext.moveTo(movetopos[0], movetopos[1]);
-                self.canvasContext.lineTo(linetopos[0], linetopos[1]);
-            }
+            // var movetopos = self._tomap(particle.lng, particle.lat, particle);
+            // var linetopos = self._tomap(particle.tlng, particle.tlat, particle);
+            // // console.log(movetopos,linetopos);
+            // if (movetopos != null && linetopos != null) {
+            //     self.canvasContext.moveTo(movetopos[0], movetopos[1]);
+            //     self.canvasContext.lineTo(linetopos[0], linetopos[1]);
+            // }
         });
         this.canvasContext.stroke();
     },

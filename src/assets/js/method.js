@@ -160,7 +160,7 @@ export const addImageC = function (that, url, locat) {
     that.mapData.viewer.entities.add({
         id: that.searchId,
         rectangle: {
-            coordinates: Cesium.Rectangle.fromDegrees(locat[1][1], locat[1][0], locat[2][1], locat[2][0]),
+            // coordinates: Cesium.Rectangle.fromDegrees(locat[1][1], locat[1][0], locat[2][1], locat[2][0]),
             material: url,
         }
     });
@@ -518,19 +518,19 @@ export const location = function (that, adr) {
     that.$store.getters.patternState ? locationC(adr, that) : locationL(adr, that);
 }
 export const locationC = function (adr, that) {
-    that.mapData.viewer.camera.flyTo({
-        // destination: Cesium.Cartesian3.fromDegrees(121.423,32.43, 1223281),//经度、纬度、高度
-        // orientation: {
-        //     heading: Cesium.Math.toRadians(348.4202942851978),//绕垂直于地心的轴旋转
-        //     pitch: Cesium.Math.toRadians(-89.74026687972041),//绕纬度线旋转
-        //     roll: Cesium.Math.toRadians(0)//绕经度线旋转
-        // },
-        // complete: function callback() {
-        // }
-    });
+    // that.mapData.viewer.camera.flyTo({
+    //     // destination: Cesium.Cartesian3.fromDegrees(121.423,32.43, 1223281),//经度、纬度、高度
+    //     // orientation: {
+    //     //     heading: Cesium.Math.toRadians(348.4202942851978),//绕垂直于地心的轴旋转
+    //     //     pitch: Cesium.Math.toRadians(-89.74026687972041),//绕纬度线旋转
+    //     //     roll: Cesium.Math.toRadians(0)//绕经度线旋转
+    //     // },
+    //     // complete: function callback() {
+    //     // }
+    // });
 }
 export const locationL = function (adr, that) {
-    that.mapData.map.setView(adr.coordinates, adr.magnificationL)
+    // that.mapData.map.setView(adr.coordinates, adr.magnificationL)
 }
 
 //增加标注
@@ -544,7 +544,7 @@ export const addLabel = function (that, id, name, position) {
         that.mapData.viewer.entities.add({
             id: id,
             name: name,
-            position: Cesium.Cartesian3.fromDegrees(position[0], position[1]),
+            // position: Cesium.Cartesian3.fromDegrees(position[0], position[1]),
             //点样式
             point: {
                 pixelSize: 20,

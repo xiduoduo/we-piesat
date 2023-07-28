@@ -137,7 +137,7 @@ export default {
                         setTimeout(function () {
                               that.$refs.tianMap && that.$refs.tianMap.initMap(type);
                         }, 1000);
-
+                        // that.mapData.map.setView(32.041,118.767)
                   } else if (type == 'bo1' || type == 'bo2') {
                         that.showBMap = true;
                         setTimeout(function () {

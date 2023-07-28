@@ -59,7 +59,7 @@ export default {
                   })
             },
             //选中方向杆
-            initType(type) {
+      initType(type) {
                   let that = this;
                   // console.log(type);
                   switch (type) {
