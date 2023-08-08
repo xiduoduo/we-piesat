@@ -2277,6 +2277,55 @@ export const setDataList = function (type) {
         listData = [
             {
                 isShow: false,
+                dataName: 'S2_MSIL1C_20230304T023609_mos_RGB影像',
+                layerMap: { 1: 'visual_space:S2_MSIL1C_20230304T023609_mos_RGB' },
+                adr: {
+                    coordinates: [34.577, 122.359],
+                    magnificationC: 1223281,
+                    magnificationL: 7
+                }
+            },
+            {
+                isShow: false,
+                dataName: '2022-2023紫菜筏架解译矢量_20230304_第12期',
+                layerMap: { 1: '2022-2023年第12期紫菜筏架解译矢量_20230304' },
+                adr: {
+                    coordinates: [32.430, 121.423],
+                    magnificationC: 411000,
+                    magnificationL: 9
+                }
+           },
+            {
+                isShow: false,
+                dataName: '2022-2023年盐城-南通海域紫菜养殖筏架卫星遥感监测报告_第12期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/2022-2023年盐城-南通海域紫菜养殖筏架卫星遥感监测报告(第12期).jpg",
+                }
+            },
+            
+           {
+                isShow: false,
+                dataName: '2022-2023年盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）_第12期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图（缩略图）.jpg",
+                }
+            },
+            {
+                isShow: false,
+                dataName: '2022-2023年盐城-南通海域紫菜养殖筏架遥感解译分布图_第12期',
+                showImg: true,
+                imgType: 1,
+                filePath: {
+                    1: imgUrl + "/2022-2023年第12期_盐城-南通海域紫菜养殖筏架遥感解译分布图.jpg",
+                }
+            },
+            
+            {
+                isShow: false,
                 dataName: '20230304影像',
                 layerMap: { 1: 'visual_space:S2_MSIL1C_20230304T023609_mos1' },
                 adr: {
